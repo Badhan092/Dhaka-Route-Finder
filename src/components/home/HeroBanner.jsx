@@ -253,52 +253,63 @@ function BrtcBusIllustration({ className = "" }) {
 
 export default function HeroBanner({ filteredCount, busesCount }) {
   return (
-    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-950 via-slate-900 to-emerald-900 text-white p-6 sm:p-10 shadow-xl border border-emerald-500/20 mb-8">
-      {/* Bangladesh Flag Accent & Atmospheric Lighting */}
+    <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#f8f3ea] via-[#f2ece3] to-emerald-50 text-emerald-950 p-6 sm:p-10 md:min-h-[320px] border border-emerald-900/15 mb-8">
+      {/* Outline ring accent */}
       <div
         aria-hidden="true"
-        className="absolute -right-12 -top-12 w-64 h-64 rounded-full bg-rose-600/25 blur-3xl pointer-events-none"
+        className="absolute -right-28 -top-28 w-[440px] h-[440px] rounded-full border border-emerald-900/25 pointer-events-none"
       />
+
+      {/* Soft green glow */}
       <div
         aria-hidden="true"
-        className="absolute left-1/4 -bottom-16 w-80 h-80 rounded-full bg-emerald-500/15 blur-3xl pointer-events-none"
+        className="absolute -left-16 -bottom-20 w-80 h-80 rounded-full bg-emerald-500/20 blur-3xl pointer-events-none"
       />
 
       {/* Decorative BRTC double-decker bus */}
-      <BrtcBusIllustration className="hidden md:block absolute right-0 bottom-0 h-full max-h-[340px] w-auto pointer-events-none select-none" />
+      <div
+        aria-hidden="true"
+        className="hidden md:block absolute -right-[8%] bottom-4 h-[230px] lg:h-[250px] aspect-[650/470] pointer-events-none select-none"
+      >
+        {/* Soft ground shadow */}
+        <div className="absolute left-[4%] right-[0%] bottom-[1%] h-[9%] rounded-[50%] bg-black/35 blur-lg" />
+        {/* Tight contact shadow under the wheels */}
+        <div className="absolute left-[10%] right-[6%] bottom-[3%] h-[5%] rounded-[50%] bg-black/55 blur-[6px]" />
+        <BrtcBusIllustration className="relative w-full h-full" />
+      </div>
 
       <div className="relative z-10 max-w-2xl">
         {/* Category Pill */}
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-200 text-xs font-semibold backdrop-blur-md mb-4">
-          <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-800/10 border border-emerald-800/25 text-emerald-900 text-xs font-semibold mb-4">
+          <span className="w-2 h-2 rounded-full bg-rose-600 animate-pulse" />
           <span>ঢাকা সিটি ট্রানজিট • Dhaka Bus Directory</span>
         </div>
 
         {/* Hero Headings */}
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
-          Navigate Dhaka with Ease
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-emerald-950 leading-tight">
+          Navigate <span className="text-emerald-700">Dhaka</span> with Ease
         </h1>
 
-        <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl">
+        <p className="mt-3 text-sm sm:text-base text-slate-700 leading-relaxed max-w-xl">
           From Mirpur to Motijheel, Uttara to Sadarghat—find reliable routes, counters, and stoppages across all local, semi-sitting, and AC services.
         </p>
 
         {/* Key Metrics / Highlights */}
         <div className="flex flex-wrap items-center gap-3 mt-6 text-xs font-medium">
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/10 text-emerald-200">
-            <Bus className="w-4 h-4 text-emerald-400" />
+          <div className="flex items-center gap-2 bg-white/80 px-3.5 py-2 rounded-xl border border-emerald-900/15 text-emerald-900 shadow-sm">
+            <Bus className="w-4 h-4 text-emerald-700" />
             <span>
-              Showing <strong className="text-white font-bold">{filteredCount}</strong> of {busesCount} buses
+              Showing <strong className="text-emerald-950 font-bold">{filteredCount}</strong> of {busesCount} buses
             </span>
           </div>
 
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/10 text-slate-200">
-            <MapPin className="w-4 h-4 text-rose-400" />
+          <div className="flex items-center gap-2 bg-white/80 px-3.5 py-2 rounded-xl border border-emerald-900/15 text-slate-700 shadow-sm">
+            <MapPin className="w-4 h-4 text-rose-600" />
             <span>All DMP Corridors</span>
           </div>
 
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-2 rounded-xl border border-white/10 text-slate-200">
-            <Compass className="w-4 h-4 text-amber-300" />
+          <div className="flex items-center gap-2 bg-white/80 px-3.5 py-2 rounded-xl border border-emerald-900/15 text-slate-700 shadow-sm">
+            <Compass className="w-4 h-4 text-amber-600" />
             <span>Verified Stoppages</span>
           </div>
         </div>
