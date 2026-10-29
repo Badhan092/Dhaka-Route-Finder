@@ -5,11 +5,14 @@ import { nameMatches, stopKey } from "@/lib/locationUtils";
 
 import { Search, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 
+import HeroBanner from "@/components/home/HeroBanner";
 import BusCard from "@/components/BusCard";
 import EmptyState from "@/components/EmptyState";
 
-const PER_PAGE = 12;
 
+
+
+const PER_PAGE = 12;
 
 export async function getServerSideProps({ query }) {
   const { getBuses, getStops } = await import("@/lib/busData");
@@ -83,16 +86,12 @@ export default function BusDirectoryPage({
       </Head>
 
       <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-8">
+
+        {/* Hero Banner Component */}
+        <HeroBanner filteredCount={filteredCount} busesCount={busesCount} />
+
+        {/* Directory Search & Filter Form */}
         <div className="mb-8">
-          <h1 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
-            Dhaka Bus Directory
-          </h1>
-
-          <p className="text-slate-600 text-xs sm:text-sm mt-1">
-            Browse all {filteredCount} of {busesCount} registered buses operating across Dhaka.
-          </p>
-
-          {/* Directory Search & Filter Form */}
           <form
             action="/buses"
             className="mt-6 bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col sm:flex-row gap-3 items-end"
