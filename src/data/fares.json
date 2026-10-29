@@ -1,0 +1,62 @@
+{
+ "achim-paribahan": {
+  "min": 10,
+  "max": 45,
+  "type": "segmented"
+ },
+ "active-paribahan": {
+  "min": 10,
+  "max": 40,
+  "type": "segmented"
+ },
+ "agradut": {
+  "min": 10,
+  "max": 40,
+  "type": "segmented"
+ },
+ "al-makka-bus": {
+  "min": 10,
+  "max": 35,
+  "type": "segmented"
+ },
+ "airport-bangabandhu-avenue": {
+  "min": 10,
+  "max": 40,
+  "type": "segmented"
+ },
+ "azmeri-glory": {
+  "min": 15,
+  "max": 70,
+  "type": "segmented"
+ },
+ "anabil-super": {
+  "min": 15,
+  "max": 65,
+  "type": "segmented"
+ },
+ "bikalpa-city-super": {
+  "min": 10,
+  "max": 30,
+  "type": "segmented"
+ },
+ "bikalpa-auto-service": {
+  "min": 10,
+  "max": 35,
+  "type": "segmented"
+ },
+ "best-satabdi": {
+  "min": 30,
+  "max": 100,
+  "type": "premium"
+ },
+ "raida": {
+  "min": 10,
+  "max": 45,
+  "type": "segmented"
+ },
+ "dhaka-chaka": {
+  "min": 20,
+  "max": 20,
+  "type": "flat"
+ }
+}

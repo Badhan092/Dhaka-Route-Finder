@@ -1,0 +1,81 @@
+SL	Bus Name (English)	Bus Name (Bangla)	Bus Image	Service Type / Category	Complete Route Details
+1	Achim Paribahan	অছিম পরিবহন		Semi-Sitting	Gabtoli;Technical;Ansar Camp;Mirpur 1;Sony Cinema Hall;Mirpur 2;Mirpur 10;Mirpur 11;Purobi;Kalshi;ECB Square;MES;Shewra;Kuril Bishwa Road;Jamuna Future Park;Bashundhara;Nadda;Notun Bazar;Bashtola;Shahjadpur;Uttar Badda;Badda;Merul;Rampura Bridge;Banasree;Demra Staff Quarter
+2	Active Paribahan	এক্টিভ পরিবহন		Regular / Semi-Sitting	Shia Masjid;Adabor;Shyamoli;Technical;Ansar Camp;Mirpur 1;Sony Hall;Mirpur 2;Mirpur 10;Mirpur 11;Purobi;Kalshi;ECB Square;MES;Shewrapara;Kuril Bishwa Road;Khilkhet;Airport;Jashimuddin;Rajlakshmi;Azampur;House Building;Abdullahpur
+3	Agradut	অগ্রদূত		Regular / Semi-Sitting	Savar;Hemayetpur;Amin Bazar;Gabtoli;Technical;Kallyanpur;Shyamoli;Shishu Mela;Agargaon;Zia Uddyan;Bijoy Sarani;Jahangir Gate;Mohakhali;Wireless;Gulshan 1;Badda Link Road;Bashtola;Shahjadpur;Uttar Badda;Notun Bazar
+4	Airport Bangabandhu Avenue	এয়ারপোর্ট বঙ্গবন্ধু এভিনিউ ট্রান্সপোর্ট		Regular Service	Fulbaria;Golap Shah Mazar;GPO;Paltan;Press Club;High Court;Matsya Bhaban;Shahbag;Bangla Motor;Kawran Bazar;Farmgate;Bijoy Sarani;Jahangir Gate;Mohakhali;Chairman Bari;Sainik Club;Banani;Kakali;Staff Road;MES;Shewra;Kuril Bishwa Road;Khilkhet;Airport;Jashimuddin;Rajlakshmi;Azampur;House Building;Abdullahpur
+5	Azmeri Glory	আজমেরী গ্লোরী		Sitting / Long-Distance City	Sadarghat;Ray Saheb Bazar;Naya Bazar;Golap Shah Mazar;GPO;Paltan;Kakrail;Shantinagar;Malibagh Moor;Mouchak;Nabisco;Mohakhali;Sainik Club;Banani;Kakali;Staff Road;MES;Shewra;Kuril Bishwa Road;Khilkhet;Airport;Jashimuddin;Rajlakshmi;Azampur;House Building;Abdullahpur;Tongi;Station Road;Mill Gate;Board Bazar;Gazipur Bypass;Konabari;Chandra
+6	Ajmi Bus	আজমী বাস		Semi-Sitting	Dhamrai;Savar;Hemayetpur;Aminbazar;Gabtoli;Technical;Kallyanpur;Shyamoli;Shishu Mela;College Gate;Asad Gate;Dhanmondi 27;Dhanmondi 32;Kalabagan;City College;New Market;Nilkhet;Azimpur;Bakshi Bazar;Gulistan;Chittagong Road
+7	Akash Bus	আকাশ বাস		Semi-Sitting	Kadamtali;Keraniganj;Babubazar;Naya Bazar;Golap Shah Mazar;GPO;Paltan;Kakrail;Shantinagar;Malibagh Moor;Mouchak;Malibagh Railgate;Hazipara;Rampura Bazar;Rampura Bridge;Merul;Badda;Shahjadpur;Bashtola;Notun Bazar;Nadda;Bashundhara;Jamuna Future Park;Kuril Bishwa Road;Khilkhet;Airport;Jashimuddin;Rajlakshmi;Azampur;House Building;Abdullahpur;Tongi
+8	Akik Bus	আকিক বাস		Regular	Ansar Camp;Mirpur 1;Sony Cinema Hall;Mirpur 2;Mirpur 10;Mirpur 11;Purobi;Kalshi;ECB Square;MES;Shewra;Kuril Bishwa Road;Jamuna Future Park;Bashundhara;Nadda;Notun Bazar;Bashtola;Shahjadpur;Uttar Badda
+9	Al Makka Bus	আল মক্কা বাস		Semi-Sitting	Motijheel;Gulistan;GPO;Paltan;Kakrail;Shantinagar;Malibagh Moor;Mouchak;Mogbazar;Nabisco;Mohakhali;Chairman Bari;Kakali;Banani;ECB Square;Kalshi;Purobi;Mirpur 10;Mirpur 2;Mirpur 1
+10	Al Madina Plus One	আল মদিনা প্লাস ওয়ান		Semi-Sitting	Nandan Park;Zirani Bazar;Baipayl;Nobinagar;Savar;Hemayetpur;Amin Bazar;Gabtoli;Technical;Kallyanpur;Shyamoli;Shishu Mela;College Gate;Asad Gate;Khamar Bari;Farmgate;Kawran Bazar;Bangla Motor;Shahbag;High Court;Press Club;Paltan;GPO;Gulistan;Motijheel;Kamalapur
+11	Alif Bus (Route 1)	আলিফ বাস (রুট ১)		Regular	Mirpur 14;Mirpur 10;Mirpur 2;Sony Cinema Hall;Mirpur 1;Mazar Road;Konabari;Rupnagar;Beribadh;Birulia;Ashulia;Zirabo;Fantasy Kingdom;Dhaka EPZ
+12	Alif Bus (Route 2)	আলিফ বাস (রুট ২)		Regular	Shia Mosque;Japan Garden City;Adabor;Shyamoli;Shishu Mela;Agargaon;Zia Uddyan;Bijoy Sarani;Jahangir Gate;Mohakhali;Wireless;Gulshan 1;Badda Link Road;Madhya Badda;Merul;Rampura Bridge;Banasree
+13	Alif Bus (Route 3)	আলিফ বাস (রুট ৩)		Regular	Mirpur 1;Mirpur 2;Mirpur 10;Kazipara;Shewrapara;Agargaon;Bijoy Sarani;Jahangir Gate;Mohakhali;Wireless;Gulshan 1;Badda Link Road;Madhya Badda;Merul;Rampura Bridge;Banasree
+14	Alif Bus (Route 4)	আলিফ বাস (রুট ৪)		Regular	Japan Garden City;Ring Road;Adabor;Shyamoli;Shishu Mela;Agargaon;Zia Uddyan;Bijoy Sarani;Jahangir Gate;Mohakhali;Banani;Kakali;Shewra;Kuril Bishwa Road;Khilkhet;Airport;Jashimuddin;Azampur;House Building;Abdullahpur
+15	Anabil Super	অনাবিল সুপার		Sitting Service	Sign Board;Shonir Akhra;Jatrabari;Sayedabad;Mugdapara;Bashabo;Khilgaon;Malibagh Railgate;Hazipara;Rampura Bazar;Rampura Bridge;Merul;Badda;Uttar Badda;Shahjadpur;Bashtola;Notun Bazar;Nadda;Bashundhara;Kuril Bishwa Road;Airport;Uttara;Tongi;Board Bazar;Gazipur Chourasta
+16	Arnob Bus	অর্ণব বাস		Semi-Sitting	Hemayetpur;Amin Bazar;Gabtoli;Technical;Kallyanpur;Shyamoli;Shishu Mela;Agargaon;Bijoy Sarani;Jahangir Gate;Mohakhali;Wireless;Gulshan 1;Badda Link Road;Rampura Bridge;Banasree;Demra Staff Quarter
+17	Ashirbad Paribahan	আশীর্বাদ পরিবহন		Semi-Sitting	Duaripara;Rupnagar;Shiyal Bari;Mirpur 2;Mirpur 1;Technical;Kallyanpur;Shyamoli;Asad Gate;Dhanmondi 27;Shukrabad;Dhanmondi 32;Kalabagan;City College;New Market;Nilkhet;Azimpur
+18	Ashulia Classic	আশুলিয়া ক্লাসিক বাস		Semi-Sitting	Nobinagar;Baipayl;Jamgora;Fantasy Kingdom;Zirabo;Ashulia Bazar;Kamarpara;Abdullahpur;House Building;Azampur;Airport;Khilkhet;Kuril;Banani;Chairman Bari;Mohakhali;Nabisco;Satrasta
+19	Asmani Bus	আসমানী বাস		Semi-Sitting	Dhour;Abdullahpur;House Building;Azampur;Airport;Kuril Bishwa Road;Jamuna Future Park;Bashundhara;Notun Bazar;Badda;Rampura Bridge;Banasree;Demra Staff Quarter;Tarabo;Madanpur
+20	ATCL Bus	এটিসিএল বাস		Semi-Sitting	Mohammadpur Bus Stand;Asad Gate;Shukrabad;Kalabagan;City College;Science Lab;Katabon;Bata Signal;Shahbag;High Court;Paltan;GPO;Gulistan;Arambagh;Notre Dame College
+21	Ayat Bus	আয়াত বাস		Semi-Sitting	Mirpur Zoo (Chiriyakhana);Sony Cinema Hall;Mirpur 2;Mirpur 10;Kazipara;Shewrapara;Taltola;Agargaon;Farmgate;Kawran Bazar;Bangla Motor;Mogbazar;Mouchak;Malibagh;Kamalapur
+22	Bahon Bus	বাহন বাস		Semi-Sitting	Mirpur 14;Mirpur 10;Mirpur 2;Mirpur 1;Technical;Shyamoli;Asad Gate;Dhanmondi 27;Kalabagan;Science Lab;Katabon;Shahbag;Press Club;Paltan;Motijheel;Kamalapur;Bashabo;Khilgaon
+23	Baishakhi Bus	বৈশাখী বাস		Regular	Savar;Hemayetpur;Amin Bazar;Gabtoli;Technical;Kallyanpur;Shyamoli;Agargaon;Bijoy Sarani;Jahangir Gate;Mohakhali;Gulshan 1;Badda Link Road;Bashtola;Notun Bazar
+24	Balaka Bus	বলাকা বাস		Semi-Sitting	Sayedabad;Manik Nagar;TT Para;Kamalapur;Malibagh;Mouchak;Mogbazar;Satrasta;Nabisco;Mohakhali;Banani;Kakali;Shewra;Kuril;Airport;Uttara;Tongi;Gazipur Chourasta
+25	Basumati Transport (Route 1)	বাসুমতি বাস		Regular	Gabtoli;Technical;Kallyanpur;Shyamoli;Farmgate;Shahbag;Press Club;Paltan;Golap Shah Mazar;Babubazar;Keraniganj;Mawa
+26	Basumati Transport (Route 2)	বাসুমতি ট্রান্সপোর্ট		Semi-Sitting	Gabtoli;Mirpur 1;Mirpur 10;Kalshi;ECB Square;Shewra;Kuril Bishwa Road;Khilkhet;Airport;Uttara;Tongi;Board Bazar;Gazipur Chourasta
+27	Best Satabdi	বেষ্ট শতাব্দী এসি বাস		Sitting / AC Service	Azimpur;Nilkhet;New Market;City College;Kalabagan;Dhanmondi 27;Farmgate;Mohakhali;Banani;Kakali;Shewra;Kuril;Airport;Uttara;Diabari
+28	Best Transport	বেষ্ট ট্রান্সপোর্ট বাস		Regular	Mirpur 10;Kazipara;Shewrapara;Taltola;Agargaon;Farmgate;Kawran Bazar;Bangla Motor;Shahbag;Matsya Bhaban;Paltan;GPO;Gulistan;Motijheel;Sayedabad;Jatrabari
+29	Bhuiyan Paribahan	ভূঁইয়া পরিবহন		Regular	Japan Garden City;Adabor;Shyamoli;Agargaon;Bijoy Sarani;Jahangir Gate;Mohakhali;Banani;Shewra;Kuril Bishwa Road;Airport;Uttara;Abdullahpur
+30	Bihanga Bus	বিহাঙ্গা বাস		Regular	Mirpur 12;Mirpur 11;Mirpur 10;Kazipara;Shewrapara;Agargaon;Bijoy Sarani;Jahangir Gate;Mohakhali;Wireless;Gulshan 1;Badda;Notun Bazar
+31	Bikalpa Auto Service	বিকল্প বাস অটো সার্ভিস		Regular	Mirpur 12;Pallabi;Purobi;Mirpur 10;Kazipara;Shewrapara;Agargaon;Bijoy Sarani;Farmgate;Kawran Bazar;Shahbag;High Court;Paltan;GPO;Gulistan;Motijheel
+32	Bikalpa City Super	বিকল্প বাস সিটি সুপার সার্ভিস		Sitting / Semi-Sitting	Mirpur 12;Pallabi;Purobi;Mirpur 10;Agargaon;Shyamoli;Asad Gate;Dhanmondi 27;Dhanmondi 32;Kalabagan;Science Lab;New Market;Nilkhet;Azimpur
+33	Bikash Paribahan	বিকাশ বাস		Semi-Sitting	Azimpur;Nilkhet;New Market;City College;Kalabagan;Dhanmondi 27;Farmgate;Jahangir Gate;Mohakhali;Banani;Kuril;Airport;Abdullahpur
+34	Bondhu Paribahan	বন্ধু পরিবহন বাস		Regular	Gulistan;GPO;Paltan;Kakrail;Shantinagar;Malibagh Moor;Mouchak;Malibagh Railgate;Hazipara;Rampura;Badda;Shahjadpur;Notun Bazar
+35	Borak Bus	বোরাক বাস		Semi-Sitting	Gabtoli;Technical;Shyamoli;Asad Gate;Science Lab;Shahbag;Press Club;Paltan;Motijheel;Sayedabad;Jatrabari
+36	BRTC Bus (Mohammadpur)	বিআরটিসি বাস		Semi-Sitting / Double Decker	Mohammadpur;Asad Gate;Khamar Bari;Farmgate;Mohakhali;Wireless;Gulshan 1;Badda;Notun Bazar;Bashundhara;Kuril Bishwa Road
+37	BRTC Bus (Gulshan-Banani Circular)	বিআরটিসি বাস (সার্কুলার)		Sitting / AC	Banani;Gulshan 2;Gulshan 1;Police Plaza;Notun Bazar
+38	Cantonment Bus Service	ক্যান্টনমেন্ট বাস সার্ভিস		Sitting Service	Mirpur 14;Kochukhet;Cantonment;Sainik Club;Banani;Kakali
+39	Champion Bus	চ্যাম্পিয়ন বাস		Regular	Vashantek;Mirpur 14;Mirpur 10;Agargaon;Khamar Bari;Farmgate;Shahbag;Paltan;Motijheel
+40	D Link Bus	ডি লিংক বাস		Regular	Fulbaria;Chankhar Pul;Matsya Bhaban;Shahbag;Farmgate;Mohakhali;Banani;Kuril;Airport;Tongi;Gazipur Chourasta
+41	Dhaka Metro Service	ঢাকার মেট্রো সার্ভিস বাস		Semi-Sitting	Mirpur 12;Mirpur 10;Agargaon;Farmgate;Shahbag;Paltan;Motijheel;Sayedabad
+42	Dishari Bus	দিশারী বাস		Semi-Sitting	Chiriyakhana (Mirpur Zoo);Mirpur 1;Ansar Camp;Technical;Shyamoli;Asad Gate;Science Lab;Shahbag;Paltan;Motijheel;Jatrabari;Shonir Akhra
+43	Everest Paribahan	এভারেস্ট পরিবহন বাস		Regular	Rupnagar Abashik;Mirpur 2;Mirpur 1;Khamar Bari;Farmgate;Gulistan;Babubazar;Keraniganj
+44	Falgun Art Transport	ফাল্গুন আর্ট ট্রান্সপোর্ট বাস		Semi-Sitting	Mirpur 12;Mirpur 10;Agargaon;Bijoy Sarani;Jahangir Gate;Mohakhali;Gulshan 1;Badda;Merul;Rampura Bridge;Banasree
+45	Gazipur Paribahan	গাজীপুর পরিবহন		Semi-Sitting	Gazipur Chourasta;Board Bazar;Tongi;Abdullahpur;Airport;Mohakhali;Mogbazar;Kakrail;Motijheel
+46	Hazi Transport	হাজি ট্রান্সপোর্ট বাস		Regular	Mirpur 12;Pallabi;Purobi;Mirpur 10;Kazipara;Shewrapara;Agargaon;Bijoy Sarani;Farmgate;Bangla Motor;Shahbag;Paltan;Gulistan;Motijheel
+47	Himachal Bus	হিমাচল বাস		Semi-Sitting	Mirpur Sony Cinema Hall;Mirpur 1;Technical;Shyamoli;Asad Gate;Science Lab;Shahbag;Kakrail;Shantinagar;Malibagh;Khilgaon;Bashabo;Mugdapara
+48	Meghla Transport	মেঘলা ট্রান্সপোর্ট বাস		Semi-Sitting	Kalabagan;Science Lab;Katabon;Bata Signal;Shahbag;Matsya Bhaban;High Court;Paltan;GPO;Gulistan;Sayedabad;Jatrabari;Shonir Akhra;Sign Board;Kanchpur;Vulta
+49	Meshkat Bus	মেসকাত বাস		Regular	Gabtoli;Technical;Shyamoli;Asad Gate;Science Lab;Shahbag;Press Club;Paltan;Motijheel;Kamalapur
+50	Midline Paribahan	মিডলাইন পরিবহন		Regular	Mohammadpur;Asad Gate;Shukrabad;Science Lab;Shahbag;Matsya Bhaban;Press Club;Paltan;Motijheel
+51	Mirpur United Service	মিরপুর ইউনাইটেড সার্ভিস		Semi-Sitting	Mirpur 14;Mirpur 10;Kazipara;Farmgate;Shahbag;Paltan;Motijheel;Sayedabad
+52	New Vision	নিউ ভিশন বাস		Semi-Sitting	Chiriyakhana;Mirpur 1;Technical;Shyamoli;Farmgate;Shahbag;High Court;Paltan;Motijheel
+53	Pallabi Local Service	পল্লবী লোকাল সার্ভিস বাস		Local Service	Asad Gate;College Gate;Shishu Mela;Shyamoli;Kallyanpur;Technical;Mirpur 1;Sony Cinema Hall;Mirpur 2;Chalantika Moor;Mirpur 6;Mirpur 11;Mirpur 12
+54	Pallabi Super	পল্লবী সুপার বাস		Semi-Sitting	Gazipur Chourasta;Tongi;Airport;Khilkhet;Kalshi;Pallabi;Mirpur 11;Mirpur 10;Mirpur 1;Gabtoli
+55	Power Paribahan	পাওয়ার পরিবহন বাস		Semi-Sitting	Mirpur 14;Mirpur 10;Mirpur 2;Sony Cinema Hall;Mirpur 1;Mazar Road;Konabari;Rupnagar;Beribadh;Birulia;Ashulia;Zirabo;Narshinghapur;Sura Bari;Kashimpur;Jarun;Konabari
+56	Prattay Bus	প্রত্যয় বাস		Regular	Gabtoli;Technical;Shyamoli;Farmgate;Mohakhali;Banani;Kuril;Airport;Abdullahpur
+57	Projapoti Paribahan	প্রজাপতি পরিবহন		Semi-Sitting	Mohammadpur;Shyamoli;Agargaon;Shewrapara;Kazipara;Mirpur 10;Kalshi;ECB Square;Airport;Abdullahpur
+58	Raida	রাইদা বাস		Semi-Sitting	Postagola;Dholairpar;Jatrabari;Sayedabad;Mugdapara;Khilgaon;Malibagh;Rampura;Badda;Kuril;Airport;Uttara;Diabari
+59	Raja City Dhaka	রাজা সিটি বাস		Regular	Postagola;Jurain;Dholairpar;Jatrabari;Sayedabad;Gulistan;Paltan;Press Club;Shahbag;Science Lab;Asad Gate;Shyamoli;Gabtoli
+60	Rajdhani Super	রাজধানী সুপার বাস		Regular	Sayedabad;Gulistan;Paltan;Farmgate;Shyamoli;Gabtoli;Hemayetpur;Savar
+61	Rajnigandha	রজনীগন্ধা বাস		Semi-Sitting	Chittagong Road;Sign Board;Matuail;Rayerbag;Shonir Akhra;Jatrabari;Sayedabad;Gulistan;GPO;Paltan;Press Club;Shahbag;Science Lab;Jigatola;Dhanmondi 15;Shankar;Mohammadpur
+62	Robrob	রবরব বাস		Semi-Sitting	Gabtoli;Technical;Ansar Camp;Mirpur 1;Mirpur 2;Mirpur 10;Purobi;Kalshi;ECB Square;MES;Banani;Kakali;Gulshan 2;Gulshan 1;Badda Link Road;Merul;Rampura Bridge;Banasree
+63	Rois Paribahan	রাইস বাস		Regular	Mirpur 14;Mirpur 10;Agargaon;Farmgate;Shahbag;Paltan;Motijheel;Sayedabad
+64	Rupkatha Paribahan	রূপকথা পরিবহন		Semi-Sitting	Gabtoli;Technical;Mirpur 1;Mirpur 10;Kalshi;Kuril Bishwa Road;Airport;Abdullahpur
+65	Salsabil	সালসাবিল বাস		Semi-Sitting	Jatrabari;Sayedabad;Kamalapur;Malibagh;Rampura;Badda;Kuril;Airport;Uttara;Tongi;Gazipur Chourasta
+66	Savar Transport	সাভার পরিবহন		Regular / Semi-Sitting	Savar;Hemayetpur;Gabtoli;Shyamoli;Asad Gate;Science Lab;Shahbag;Paltan;Motijheel
+67	Shadhin Express	স্বাধীন এক্সপ্রেস বাস		Regular	Mirpur 12;Mirpur 10;Agargaon;Bijoy Sarani;Jahangir Gate;Mohakhali;Kakrail;Motijheel
+68	Shahria Enterprise	শাহরিয়া এন্টারপ্রাইজ বাস		Semi-Sitting	Chiriyakhana;Mirpur 1;Gabtoli;Amin Bazar;Savar;Nobinagar;Chandra
+69	Shikhor Paribahan	শিখর পরিবহন বাস		Semi-Sitting	Mirpur 12;Pallabi;Purobi;Mirpur 11;Mirpur 10;Kazipara;Shewrapara;Taltola;Agargaon;Bijoy Sarani;Farmgate;Kawran Bazar;Bangla Motor;Shahbag;Matsya Bhaban;High Court;Press Club;Paltan;GPO;Gulistan;Janapath Moor;Jatrabari
+70	Skyline	স্কাইলাইন বাস		Semi-Sitting	Mirpur 12;Mirpur 10;Farmgate;Shahbag;Press Club;Paltan;Motijheel
+71	Suprovat Paribahan	সুপ্রভাত পরিবহন		Semi-Sitting	Sadarghat;Victoria Park;Malibagh;Rampura;Badda;Notun Bazar;Kuril;Airport;Abdullahpur;Tongi;Gazipur
+72	Thikana Express	ঠিকানা এক্সপ্রেস বাস		Semi-Sitting	Shonbari Sreenagar;Nimtola;Kuchimura;Rajendrapur;Hasnabad;Postagola;Jurain;Jatrabari;Sayedabad;Motijheel
+73	Titas Bus	তিতাস বাস		Regular	Chiriyakhana;Mirpur 1;Gabtoli;Amin Bazar;Savar;Nobinagar;Chandra
+74	Torongo Plus	তরঙ্গ প্লাস বাস		Semi-Sitting	Mohammadpur;Asad Gate;Science Lab;Shahbag;Kakrail;Malibagh;Rampura;Banasree
+75	Transilva	ট্রান্সিল্ভা বাস		Semi-Sitting	Mirpur 1;Ansar Camp;Technical;Kallyanpur;Shyamoli;Shishu Mela;College Gate;Asad Gate;Science Lab;Shahbag;Kakrail;Malibagh;Khilgaon;Jatrabari
+76	Trust Transport Services	ট্রাষ্ট ট্রান্সপোর্ট বাস		Sitting / AC Service	Mirpur DOHS;Kalshi;ECB Square;Garrison (Cantonment);Jahangir Gate;Farmgate;Shahbag;Motijheel
+77	VIP 27	ভিআইপি ২৭ বাস		Sitting / Semi-Sitting	Azimpur;Nilkhet;New Market;City College;Kalabagan;Dhanmondi 27;Farmgate;Mohakhali;Banani;Kakali;MES;Shewra;Kuril Bishwa Road;Airport;Abdullahpur;Tongi;Gazipur
+78	7 No. Bus	৭ নং বাস		Local Service	Gabtoli;Technical;Kallyanpur;Shyamoli;Shishu Mela;College Gate;Asad Gate;Farmgate;Kawran Bazar;Bangla Motor;Mogbazar;Mouchak;Malibagh;Khilgaon;Sayedabad
+79	8 No. Bus	৮ নং বাস		Local Service	Gabtoli;Technical;Shyamoli;Asad Gate;Science Lab;New Market;Azimpur;Gulistan;Jatrabari
+80	Dhaka Chaka	ঢাকা চাকা		AC Special Circular	Banani;Gulshan 2;Gulshan 1;Police Plaza;Notun Bazar
