@@ -4,254 +4,192 @@ function BrtcBusIllustration({ className = "" }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="340 160 650 470"
+      viewBox="60 1000 1680 1030"
+      preserveAspectRatio="xMidYMid meet"
       className={className}
-      aria-hidden="true"
-      focusable="false"
-      preserveAspectRatio="xMaxYMax meet"
+      role="img"
+      aria-label="BRTC pink bus"
     >
-        <defs>
-          <pattern id="brtc-dots" width="3" height="3" patternUnits="userSpaceOnUse">
-    
-            <circle cx="0.75" cy="0.75" r="0.55" fill="#ffffff" opacity="0.12"/>
-            <circle cx="2.25" cy="2.25" r="0.6" fill="#b0187a" opacity="0.14"/>
-          </pattern>
-          <linearGradient id="brtc-front" x1="0" y1="0" x2="0.3" y2="1">
-            <stop offset="0" stopColor="#f77dd0"/>
-            <stop offset="0.6" stopColor="#f26ac4"/>
-            <stop offset="1" stopColor="#e556b4"/>
-          </linearGradient>
-          <linearGradient id="brtc-side" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#f673cc"/>
-            <stop offset="0.55" stopColor="#f066c4"/>
-            <stop offset="1" stopColor="#e05bb0"/>
-          </linearGradient>
-          <linearGradient id="brtc-roof" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#ff8fdb"/>
-            <stop offset="1" stopColor="#f770cb"/>
-          </linearGradient>
-          <linearGradient id="brtc-glass" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#d6ecfa"/>
-            <stop offset="0.5" stopColor="#a9cbe6"/>
-            <stop offset="1" stopColor="#7fa6cc"/>
-          </linearGradient>
-          <linearGradient id="brtc-win" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#4a63b0"/>
-            <stop offset="0.35" stopColor="#26356f"/>
-            <stop offset="1" stopColor="#16204a"/>
-          </linearGradient>
-          <linearGradient id="brtc-rim" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0" stopColor="#f4f5f7"/>
-            <stop offset="0.5" stopColor="#b7bbc3"/>
-            <stop offset="1" stopColor="#7d8189"/>
-          </linearGradient>
-          <linearGradient id="brtc-chrome" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0" stopColor="#eceef1"/>
-            <stop offset="1" stopColor="#9fa3aa"/>
-          </linearGradient>
-          <radialGradient id="brtc-shadow" cx="0.5" cy="0.5" r="0.5">
-            <stop offset="0" stopColor="#000" stopOpacity="0.6"/>
-            <stop offset="0.6" stopColor="#000" stopOpacity="0.25"/>
-            <stop offset="1" stopColor="#000" stopOpacity="0"/>
-          </radialGradient>
-        </defs>
+    <defs>
+        <linearGradient id="brtcPink" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#ec3f9c"/>
+          <stop offset="0.5" stopColor="#e0308d"/>
+          <stop offset="1" stopColor="#c8227a"/>
+        </linearGradient>
+        <linearGradient id="brtcPinkFront" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#ee45a2"/>
+          <stop offset="1" stopColor="#d42a85"/>
+        </linearGradient>
+        <linearGradient id="brtcRoof" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stopColor="#f25aac"/>
+          <stop offset="1" stopColor="#e0308d"/>
+        </linearGradient>
+        <linearGradient id="brtcGlass" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#4a5659"/>
+          <stop offset="0.5" stopColor="#2d3638"/>
+          <stop offset="1" stopColor="#1c2325"/>
+        </linearGradient>
+        <linearGradient id="brtcWindshield" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stopColor="#6b7577"/>
+          <stop offset="0.5" stopColor="#3a4446"/>
+          <stop offset="1" stopColor="#1f2729"/>
+        </linearGradient>
+        <linearGradient id="brtcCurtain" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stopColor="#c85a95"/>
+          <stop offset="0.3" stopColor="#e58bbd"/>
+          <stop offset="0.6" stopColor="#b4467f"/>
+          <stop offset="1" stopColor="#e58bbd"/>
+        </linearGradient>
+        <radialGradient id="brtcHub" cx="0.4" cy="0.4" r="0.7">
+          <stop offset="0" stopColor="#d9dcde"/>
+          <stop offset="1" stopColor="#6f7679"/>
+        </radialGradient>
+        <filter id="brtcBlur" x="-10%" y="-50%" width="120%" height="200%">
+          <feGaussianBlur stdDeviation="14"/>
+        </filter>
+      </defs>
+      <path d="M120,1760 L560,1930 L1060,2000 L1560,1985 L1600,1960 L1100,1990 L700,1900 Z" fill="#000" opacity="0.35" filter="url(#brtcBlur)"/>
+      <path d="M82,1352 Q84,1338 108,1332 L1035,1112 L1085,1135 L1050,1975 L700,1885 L560,1850 Q380,1790 90,1672 Q80,1665 82,1640 Z" fill="url(#brtcPink)"/>
+      <path d="M100,1336 L330,1262 L640,1165 L1030,1105 L1110,1065 L1190,1045 L1245,1060 L1235,1100 L1085,1135 L1035,1112 L108,1332 Z" fill="url(#brtcRoof)"/>
+      <path d="M100,1336 L640,1165 L1035,1108" fill="none" stroke="#f97cbc" strokeWidth="3" opacity="0.7"/>
+      <path d="M1130,1058 L1185,1030 L1200,1038 L1150,1068 Z" fill="#5b2a45"/>
+      <ellipse cx="1180" cy="1098" rx="14" ry="14" fill="#2a2a2a"/>
+      <path d="M90,1350 L135,1340 L135,1485 L96,1482 Z" fill="#14181a"/>
+      <path d="M100,1362 L128,1356 L128,1478 L104,1476 Z" fill="#5c6568"/>
+      <path d="M135,1345 L830,1165 L836,1172 L826,1505 L135,1487 Z" fill="#0f1416"/>
+      <g fill="url(#brtcGlass)">
+        <path d="M141,1347 L182,1336 L182,1479 L141,1478 Z"/>
+        <path d="M190,1334 L237,1322 L237,1481 L190,1480 Z"/>
+        <path d="M245,1320 L317,1302 L317,1483 L245,1482 Z"/>
+        <path d="M325,1300 L432,1273 L432,1486 L325,1484 Z"/>
+        <path d="M440,1271 L597,1232 L597,1491 L440,1488 Z"/>
+        <path d="M605,1230 L826,1174 L820,1497 L605,1492 Z"/>
+      </g>
+      <path d="M141,1408 L826,1335" stroke="#0f1416" strokeWidth="9" fill="none"/>
+      <g stroke="#d7a21b" strokeWidth="5" opacity="0.8">
+        <line x1="250" y1="1325" x2="250" y2="1480"/>
+        <line x1="435" y1="1285" x2="435" y2="1486"/>
+        <line x1="602" y1="1240" x2="602" y2="1492"/>
+      </g>
+      <g fill="#0b1012" opacity="0.8">
+        <ellipse cx="478" cy="1428" rx="18" ry="32"/>
+        <ellipse cx="650" cy="1395" rx="22" ry="40"/>
+        <ellipse cx="610" cy="1430" rx="20" ry="30"/>
+      </g>
+      <g fill="url(#brtcCurtain)">
+        <path d="M214,1327 L236,1322 L236,1470 L214,1468 Z"/>
+        <path d="M285,1308 L316,1301 L316,1472 L285,1470 Z"/>
+        <path d="M395,1281 L431,1272 L431,1476 L395,1474 Z"/>
+        <path d="M538,1244 L587,1232 L587,1480 L538,1477 Z"/>
+        <path d="M772,1190 L822,1176 L818,1486 L765,1482 Z"/>
+      </g>
+      <g stroke="#a23a74" strokeWidth="2" opacity="0.7">
+        <line x1="548" y1="1242" x2="548" y2="1478"/>
+        <line x1="562" y1="1238" x2="562" y2="1479"/>
+        <line x1="577" y1="1235" x2="577" y2="1479"/>
+        <line x1="785" y1="1186" x2="783" y2="1484"/>
+        <line x1="800" y1="1182" x2="798" y2="1485"/>
+        <line x1="812" y1="1179" x2="810" y2="1486"/>
+      </g>
+      <path d="M135,1486 L826,1506" stroke="#0f1416" strokeWidth="6"/>
+      <path d="M845,1160 L1085,1135 L1050,1975 L845,1700 Z" fill="url(#brtcPink)" opacity="0.0"/>
+      <path d="M870,1165 L1050,1140 L1062,1190 L880,1215 Z" fill="#d52b86" stroke="#c0227a" strokeWidth="2"/>
+      <path d="M845,1700 L845,1250" stroke="#b01e6c" strokeWidth="3"/>
+      <path d="M1050,1250 L1050,1975" stroke="#b01e6c" strokeWidth="3"/>
+      <path d="M860,1275 L1040,1240 L1046,1245 L1046,1545 L852,1535 Z" fill="#0f1416"/>
+      <path d="M870,1285 L1035,1254 L1035,1535 L865,1527 Z" fill="url(#brtcGlass)"/>
+      <path d="M893,1280 L945,1270 L955,1525 L905,1522 Z" fill="url(#brtcCurtain)"/>
+      <path d="M1005,1390 L1030,1385 L1030,1535 L1005,1533 Z" fill="#2b3234" opacity="0.8"/>
+      <rect x="845" y="1608" width="40" height="8" rx="4" fill="#111"/>
+      <path d="M230,1700 L440,1768 L440,1850 L240,1790 Z" fill="none" stroke="#b01e6c" strokeWidth="3"/>
+      <path d="M300,1740 L300,1815" stroke="#b01e6c" strokeWidth="3"/>
+      <path d="M440,1768 L555,1810 L555,1880 L440,1840 Z" fill="none" stroke="#b01e6c" strokeWidth="3"/>
+      <path d="M778,1865 L880,1895 L880,2050 L778,2020 Z" fill="#d5298a" stroke="#a81c68" strokeWidth="3" transform="translate(0,-130)"/>
+      <rect x="815" y="1840" width="20" height="20" fill="#111" transform="translate(0,-10)"/>
+      <path d="M85,1518 L305,1530 L305,1558 L85,1545 Z" fill="#d6202a"/>
+      <path d="M85,1545 L305,1558 L305,1590 L85,1575 Z" fill="#0d7a4a"/>
+      <path d="M440,1550 L845,1598 L1040,1625 L1040,1670 L845,1648 L440,1597 Z" fill="#e0202b"/>
+      <path d="M440,1597 L845,1648 L1040,1670 L1040,1715 L845,1692 L440,1642 Z" fill="#0f7d4c"/>
+      <g transform="translate(305,1620) skewY(4)">
+        <text x="0" y="0" fontFamily="Arial Black, Arial, Helvetica, sans-serif" fontWeight="900" fontSize="130" fill="#f2f2f2" textLength="135" lengthAdjust="spacingAndGlyphs">BRTC</text>
+      </g>
+      <path d="M170,1620 Q200,1590 235,1620 L260,1710 Q240,1740 175,1730 Z" fill="#1a1d1e"/>
+      <ellipse cx="203" cy="1680" rx="30" ry="72" fill="#0d0f10"/>
+      <ellipse cx="200" cy="1675" rx="16" ry="48" fill="url(#brtcHub)"/>
+      <path d="M580,1790 Q600,1690 690,1685 Q770,1700 775,1830 L770,1900 L585,1860 Z" fill="#181b1c"/>
+      <ellipse cx="690" cy="1805" rx="82" ry="145" fill="#0c0e0f"/>
+      <ellipse cx="683" cy="1790" rx="60" ry="120" fill="#1b1f21"/>
+      <ellipse cx="662" cy="1775" rx="46" ry="94" fill="url(#brtcHub)"/>
+      <ellipse cx="655" cy="1770" rx="34" ry="70" fill="none" stroke="#50585b" strokeWidth="3"/>
+      <g fill="#c9cdcf" stroke="#4a5154" strokeWidth="2">
+        <circle cx="640" cy="1735" r="8"/>
+        <circle cx="665" cy="1730" r="8"/>
+        <circle cx="684" cy="1760" r="8"/>
+        <circle cx="660" cy="1800" r="8"/>
+        <circle cx="635" cy="1805" r="8"/>
+        <circle cx="628" cy="1770" r="8"/>
+      </g>
+      <ellipse cx="656" cy="1768" rx="14" ry="26" fill="#3b4144"/>
+      <path d="M1085,1135 L1095,1112 Q1300,1055 1545,1140 L1578,1640 L1585,1900 Q1585,1955 1530,1965 L1050,1975 Z" fill="url(#brtcPinkFront)"/>
+      <path d="M1100,1130 L1285,1085 L1548,1150 L1578,1625 L1100,1610 Z" fill="#0b0f10"/>
+      <path d="M1115,1140 L1282,1100 L1535,1160 L1565,1610 L1112,1595 Z" fill="url(#brtcWindshield)"/>
+      <g fill="#222a24" opacity="0.8">
+        <ellipse cx="1420" cy="1250" rx="110" ry="60"/>
+        <ellipse cx="1330" cy="1330" rx="70" ry="50"/>
+        <ellipse cx="1490" cy="1330" rx="60" ry="45"/>
+      </g>
+      <path d="M1290,1105 L1530,1165 L1530,1215 L1285,1160 Z" fill="#a8b0b2" opacity="0.65"/>
+      <path d="M1440,1300 L1500,1300 L1500,1450 L1440,1450 Z" fill="#6e7679" opacity="0.5"/>
+      <path d="M1112,1500 L1300,1500 L1330,1560 L1112,1585 Z" fill="#1a2224"/>
+      <ellipse cx="1220" cy="1540" rx="95" ry="30" fill="#2d363a"/>
+      <path d="M1115,1448 L1250,1450 Q1275,1455 1290,1480 L1320,1525" fill="none" stroke="#e8c320" strokeWidth="9" strokeLinecap="round"/>
+      <path d="M1250,1450 L1250,1500" stroke="#e8c320" strokeWidth="7"/>
+      <path d="M1120,1155 L1135,1150 L1135,1400 L1120,1400 Z" fill="#20282a" opacity="0.7"/>
+      <g stroke="#0a0a0a" strokeLinecap="round" fill="none">
+        <path d="M1302,1638 L1418,1330" strokeWidth="10"/>
+        <path d="M1385,1330 L1450,1330" strokeWidth="3"/>
+        <path d="M1292,1630 L1410,1330" strokeWidth="4"/>
+        <path d="M1532,1632 L1412,1335" strokeWidth="10"/>
+        <path d="M1525,1625 L1405,1335" strokeWidth="4"/>
+      </g>
+      <path d="M1100,1610 L1578,1625 L1578,1720 L1255,1790 L1210,1700 Q1160,1690 1100,1680 Z" fill="#e3338f"/>
+      <path d="M1210,1650 L1565,1640 L1545,1760 Q1400,1800 1260,1810 Z" fill="#e9449c"/>
+      <path d="M1210,1650 Q1380,1655 1565,1640" stroke="#c0227a" strokeWidth="3" fill="none"/>
+      <ellipse cx="1415" cy="1800" rx="22" ry="10" fill="none" stroke="#c0227a" strokeWidth="3"/>
+      <circle cx="1187" cy="1715" r="20" fill="none" stroke="#b01e6c" strokeWidth="3"/>
+      <g transform="translate(1358,1745) skewY(-1)">
+        <text x="0" y="0" fontFamily="Arial Black, Arial, Helvetica, sans-serif" fontWeight="900" fontSize="68" fill="#f2f2f2" textLength="120" lengthAdjust="spacingAndGlyphs">BRTC</text>
+      </g>
+      <path d="M1050,1850 L1255,1835 Q1400,1870 1580,1830 L1585,1900 Q1585,1955 1530,1965 L1050,1975 Z" fill="#df2f8b"/>
+      <path d="M1255,1835 Q1400,1870 1580,1830" stroke="#b01e6c" strokeWidth="3" fill="none"/>
+      <path d="M1078,1765 Q1160,1775 1255,1795 L1250,1835 Q1170,1830 1118,1805 Q1085,1795 1078,1765 Z" fill="#0d0f10"/>
+      <circle cx="1117" cy="1790" r="14" fill="#e08a1a"/>
+      <circle cx="1165" cy="1810" r="20" fill="#e6eef0" stroke="#222" strokeWidth="3"/>
+      <circle cx="1215" cy="1812" r="20" fill="#d8e2e5" stroke="#222" strokeWidth="3"/>
+      <circle cx="1165" cy="1810" r="9" fill="#9fb0b5"/>
+      <circle cx="1215" cy="1812" r="9" fill="#9fb0b5"/>
+      <circle cx="1202" cy="1905" r="16" fill="#cdd5d7" stroke="#8a8f91" strokeWidth="3"/>
+      <path d="M1538,1745 Q1565,1735 1580,1750 L1580,1795 Q1555,1800 1540,1790 Z" fill="#0d0f10"/>
+      <circle cx="1552" cy="1775" r="9" fill="#e1e9eb"/>
+      <circle cx="1569" cy="1768" r="9" fill="#e1e9eb"/>
+      <rect x="1386" y="1845" width="70" height="60" rx="3" fill="#12a57a" stroke="#d9e6df" strokeWidth="3" transform="rotate(-3 1421 1875)"/>
+      <text x="1421" y="1895" fontFamily="Arial, sans-serif" fontSize="22" textAnchor="middle" fill="#2c4f45" transform="rotate(-3 1421 1875)">88-২১১</text>
+      <rect x="1396" y="1852" width="50" height="6" fill="#2c4f45" opacity="0.6" transform="rotate(-3 1421 1875)"/>
+      <path d="M1035,1135 Q1060,1105 1130,1085 L1205,1075 L1240,1048 Q1290,1050 1305,1100 L1312,1285 L1230,1285 L1210,1140 L1165,1120 Q1090,1140 1060,1160 Z" fill="#e8409a" stroke="#b01e6c" strokeWidth="2"/>
+      <path d="M1205,1100 Q1240,1085 1280,1105 L1312,1285 L1230,1290 Z" fill="#f05aa9"/>
+      <path d="M1232,1285 L1312,1285 L1312,1312 L1232,1312 Z" fill="#e8861a"/>
+      <path d="M1232,1295 L1312,1295" stroke="#f4b04a" strokeWidth="4"/>
+      <path d="M1528,1245 Q1535,1205 1575,1200 L1680,1208 Q1715,1220 1715,1260 L1715,1380 Q1712,1405 1690,1405 L1640,1395 L1640,1255 L1580,1240 Z" fill="#e8409a" stroke="#b01e6c" strokeWidth="2"/>
+      <path d="M1645,1250 L1712,1262 L1715,1380 L1650,1390 Z" fill="#f05aa9"/>
+      <path d="M1672,1385 L1712,1385 L1710,1408 L1676,1406 Z" fill="#e8861a"/>
+      <path d="M1528,1245 Q1580,1228 1640,1258" fill="none" stroke="#b01e6c" strokeWidth="3"/>
 
-        <g id="brtc-bus">
-          <ellipse cx="670" cy="598" rx="345" ry="24" fill="url(#brtc-shadow)"/>
-          <ellipse cx="450" cy="582" rx="95" ry="10" fill="url(#brtc-shadow)"/>
-
-  
-          <ellipse cx="846" cy="572" rx="17" ry="16" fill="#111113"/>
-
-  
-          <polygon points="577,190 966,328 976,528 962,548 905,568 830,572 722,582 668,604 595,598 505,590 580,470" fill="url(#brtc-side)"/>
-  
-          <polygon points="575,505 976,512 976,528 962,548 905,568 830,572 722,582 668,604 595,598 505,590 580,520" fill="#d94fa8" opacity="0.35"/>
-
-  
-          <polygon points="388,224 396,209 572,168 580,172 966,312 968,330 578,192 392,228" fill="url(#brtc-roof)"/>
-          <polygon points="396,209 572,168 580,172 578,178 400,218" fill="#ffb0e8" opacity="0.7"/>
-
-  
-          <polygon points="390,225 577,190 582,470 505,592 362,548 360,540 366,372" fill="url(#brtc-front)"/>
-          <polygon points="390,225 577,190 582,470 505,592 362,548 360,540 366,372" fill="url(#brtc-dots)"/>
-          <polygon points="577,190 966,328 976,528 962,548 905,568 830,572 722,582 668,604 595,598 505,590 580,470" fill="url(#brtc-dots)"/>
-
-  
-          <polygon points="577,190 590,194 592,470 582,470" fill="#e65cb9"/>
-
-  
-          <polygon points="398,228 461,214 461,293 398,299" fill="#c4d0e8" stroke="#2e2f3a" strokeWidth="3.5"/>
-          <polygon points="402,232 457,219 457,258 402,267" fill="#9fb2db"/>
-          <polygon points="402,267 457,258 457,289 402,295" fill="#2f3f78"/>
-          <polygon points="470,208 552,196 552,276 470,286" fill="#c4d0e8" stroke="#2e2f3a" strokeWidth="3.5"/>
-          <polygon points="474,212 548,201 548,238 474,248" fill="#8ea6d8"/>
-          <polygon points="474,248 548,238 548,272 474,282" fill="#2a3a74"/>
-
-  
-          <polygon points="590,205 962,335 965,378 590,282" fill="url(#brtc-win)"/>
-          <polygon points="590,205 962,335 962,344 590,218" fill="#5b78c8" opacity="0.55"/>
-          <g stroke="#f06cc4" strokeWidth="5"><line x1="635" y1="220.8" x2="635" y2="293.5"/><line x1="680" y1="236.5" x2="680" y2="305.0"/><line x1="725" y1="252.2" x2="725" y2="316.6"/><line x1="772" y1="268.7" x2="772" y2="328.6"/><line x1="815" y1="283.8" x2="815" y2="339.6"/><line x1="855" y1="297.8" x2="855" y2="349.8"/><line x1="892" y1="310.7" x2="892" y2="359.3"/><line x1="925" y1="322.2" x2="925" y2="367.8"/><line x1="948" y1="330.3" x2="948" y2="373.6"/></g>
-          <polygon points="590,205 962,335 965,378 590,282" fill="none" stroke="#e45bb7" strokeWidth="2.5"/>
-
-  
-          <polygon points="578,280 968,376 968,391 578,297" fill="#f2514c"/>
-          <polygon points="578,299 968,393 968,408 578,318" fill="#2f8c60"/>
-          <polygon points="578,299 968,393 968,397 578,303" fill="#1f6d49"/>
-
-  
-          <polygon points="428,296 506,290 506,322 428,330" fill="#fde9f5" stroke="#e09acc" strokeWidth="1.5"/>
-          <g stroke="#c8609f" strokeWidth="1.6">
-            <line x1="434" y1="304" x2="500" y2="300"/>
-            <line x1="434" y1="311" x2="494" y2="308"/>
-            <line x1="434" y1="318" x2="486" y2="315"/>
-          </g>
-
-  
-          <text x="741" y="357" fontFamily="Arial Black, Arial, Helvetica, sans-serif" fontWeight="900" fontSize="35" fill="#ffffff" transform="rotate(13 741 357)" textLength="70" lengthAdjust="spacingAndGlyphs">BRTC</text>
-
-  
-          <polygon points="902,372 946,380 946,394 902,388" fill="#f58ad4" stroke="#fbb0e3" strokeWidth="1.5"/>
-
-  
-          <polygon points="575,352 601,356 601,467 575,471" fill="#1b2756" stroke="#2e2f3a" strokeWidth="3"/>
-          <polygon points="578,356 598,359 598,380 578,377" fill="#4a63b0" opacity="0.6"/>
-          <polygon points="606,361 638,365 638,440 606,440" fill="#1b2756" stroke="#2e2f3a" strokeWidth="3"/>
-          <polygon points="609,366 635,369 635,388 609,386" fill="#4a63b0" opacity="0.6"/>
-          <polygon points="651,374 677,376 677,459 651,459" fill="#1b2756" stroke="#2e2f3a" strokeWidth="3"/>
-          <rect x="606" y="444" width="16" height="20" fill="#2a2a33" stroke="#777" strokeWidth="1.5"/>
-
-  
-          <polygon points="678,390 712,392 712,577 678,574" fill="#c7bfd3" stroke="#2e2f3a" strokeWidth="2.5"/>
-          <polygon points="682,396 693,397 693,566 682,564" fill="#6e6a86"/>
-          <polygon points="697,397 709,398 709,567 697,568" fill="#6e6a86"/>
-          <line x1="695" y1="395" x2="695" y2="572" stroke="#2e2f3a" strokeWidth="2.5"/>
-          <polygon points="684,402 691,402 691,440 684,440" fill="#9aa3c8" opacity="0.7"/>
-          <polygon points="699,403 707,404 707,442 699,442" fill="#9aa3c8" opacity="0.7"/>
-
-  
-          <polygon points="717,396 950,428 950,476 717,466" fill="url(#brtc-win)"/>
-          <polygon points="717,396 950,428 950,438 717,408" fill="#5b78c8" opacity="0.5"/>
-          <g stroke="#f06cc4" strokeWidth="5">
-            <line x1="760" y1="402" x2="760" y2="468"/>
-            <line x1="805" y1="408" x2="805" y2="469"/>
-            <line x1="850" y1="414" x2="850" y2="471"/>
-            <line x1="893" y1="420" x2="893" y2="473"/>
-            <line x1="918" y1="424" x2="918" y2="474"/>
-          </g>
-          <polygon points="717,396 950,428 950,476 717,466" fill="none" stroke="#2e2f3a" strokeWidth="2"/>
-
-  
-          <polygon points="575,466 974,477 974,489 575,481" fill="#f2514c"/>
-          <polygon points="575,489 678,491 678,505 575,503" fill="#2f8c60"/>
-          <polygon points="716,491 976,497 976,511 716,505" fill="#2f8c60"/>
-
-  
-          <rect x="957" y="494" width="12" height="32" fill="#c24a9a" stroke="#fbb0e3" strokeWidth="1"/>
-          <g stroke="#7a2a63" strokeWidth="1">
-            <line x1="958" y1="500" x2="968" y2="500"/>
-            <line x1="958" y1="506" x2="968" y2="506"/>
-            <line x1="958" y1="512" x2="968" y2="512"/>
-            <line x1="958" y1="518" x2="968" y2="518"/>
-          </g>
-
-  
-          <path d="M586,600 C582,540 600,506 634,506 C670,506 686,545 680,604 Z" fill="#241a2b"/>
-          <path d="M588,600 C584,545 602,512 634,512" fill="none" stroke="#f77dd0" strokeWidth="3"/>
-          <path d="M852,574 C850,520 862,502 880,502 C898,502 912,522 908,568 Z" fill="#241a2b"/>
-
-  
-  
-            <ellipse cx="880" cy="546" rx="25" ry="40" fill="#151517"/>
-            <ellipse cx="880" cy="546" rx="21" ry="35" fill="none" stroke="#2b2b30" strokeWidth="2"/>
-            <ellipse cx="880" cy="546" rx="16" ry="29" fill="none" stroke="#222226" strokeWidth="1.5"/>
-            <ellipse cx="883" cy="546" rx="17" ry="28" fill="#40424a"/>
-            <ellipse cx="883" cy="546" rx="14" ry="25" fill="url(#brtc-rim)" stroke="#5a5d63" strokeWidth="1.5"/>
-            <ellipse cx="883" cy="546" rx="10.9" ry="19.5" fill="#a9adb5" stroke="#6b6e75" strokeWidth="1"/>
-            <ellipse cx="891.7" cy="546.0" rx="1.4" ry="2.0" fill="#3b3d42"/><ellipse cx="889.1" cy="557.0" rx="1.4" ry="2.0" fill="#3b3d42"/><ellipse cx="883.0" cy="561.5" rx="1.4" ry="2.0" fill="#3b3d42"/><ellipse cx="876.9" cy="557.0" rx="1.4" ry="2.0" fill="#3b3d42"/><ellipse cx="874.3" cy="546.0" rx="1.4" ry="2.0" fill="#3b3d42"/><ellipse cx="876.9" cy="535.0" rx="1.4" ry="2.0" fill="#3b3d42"/><ellipse cx="883.0" cy="530.5" rx="1.4" ry="2.0" fill="#3b3d42"/><ellipse cx="889.1" cy="535.0" rx="1.4" ry="2.0" fill="#3b3d42"/>
-            <ellipse cx="883" cy="546" rx="7.0" ry="12.5" fill="#c9ccd2" stroke="#4d4f55" strokeWidth="1.2"/>
-            <ellipse cx="888.2" cy="549.8" rx="1.3" ry="1.9" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="885.1" cy="555.2" rx="1.3" ry="1.9" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="880.9" cy="555.2" rx="1.3" ry="1.9" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="877.8" cy="549.8" rx="1.3" ry="1.9" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="877.8" cy="542.2" rx="1.3" ry="1.9" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="880.9" cy="536.8" rx="1.3" ry="1.9" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="885.1" cy="536.8" rx="1.3" ry="1.9" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="888.2" cy="542.2" rx="1.3" ry="1.9" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/>
-            <ellipse cx="883" cy="546" rx="3.4" ry="6.0" fill="#e7e9ed" stroke="#4d4f55" strokeWidth="1.2"/>
-            <ellipse cx="883" cy="546" rx="1.4" ry="2.5" fill="#6c6f76"/>
-    
-
-  
-          <polygon points="373,356 546,342 564,462 372,468" fill="url(#brtc-glass)" stroke="#26262c" strokeWidth="4"/>
-          <polygon points="376,360 456,353 458,462 376,466" fill="#bcd8ee" opacity="0.55"/>
-          <polygon points="380,430 456,425 458,462 376,466" fill="#5d86b8" opacity="0.55"/>
-          <polygon points="466,425 556,418 562,458 468,462" fill="#5a82b4" opacity="0.5"/>
-          <polygon points="392,352 420,350 396,466 376,466" fill="#ffffff" opacity="0.25"/>
-          <line x1="458" y1="349" x2="462" y2="465" stroke="#26262c" strokeWidth="5"/>
-          <g stroke="#0e0e10" strokeWidth="3" strokeLinecap="round">
-            <line x1="402" y1="466" x2="448" y2="384"/>
-            <line x1="440" y1="466" x2="447" y2="384"/>
-            <line x1="470" y1="466" x2="498" y2="394"/>
-            <line x1="504" y1="460" x2="498" y2="394"/>
-          </g>
-
-  
-          <rect x="537" y="352" width="27" height="58" rx="7" fill="#f89a4a" stroke="#6a3a20" strokeWidth="2"/>
-          <rect x="541" y="356" width="19" height="30" rx="4" fill="#ffc48e" opacity="0.8"/>
-          <line x1="550" y1="410" x2="552" y2="424" stroke="#222" strokeWidth="3"/>
-          <rect x="357" y="371" width="19" height="52" rx="6" fill="#f58aa6" stroke="#6a3a20" strokeWidth="2"/>
-          <rect x="360" y="400" width="13" height="20" rx="4" fill="#f8923c"/>
-
-  
-          <polygon points="372,468 566,462 572,490 505,592 362,548 360,540" fill="#ee62be" opacity="0.55"/>
-          <polygon points="362,538 500,584 505,592 362,548" fill="#ff8be0" opacity="0.7"/>
-
-  
-          <rect x="413" y="467" width="72" height="11" rx="2" fill="#262629" stroke="#8a8a90" strokeWidth="1"/>
-          <text x="449" y="475.8" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="8" fill="#e9e9ec">ASHOK LEYLAND</text>
-
-  
-          <rect x="406" y="485" width="90" height="54" rx="4" fill="#1f1f22" stroke="#9a9ca2" strokeWidth="2.5"/>
-          <g stroke="#c9cbd0" strokeWidth="1.6">
-            <line x1="410" y1="494" x2="492" y2="494"/>
-            <line x1="410" y1="502" x2="492" y2="502"/>
-            <line x1="410" y1="510" x2="492" y2="510"/>
-            <line x1="410" y1="518" x2="492" y2="518"/>
-            <line x1="410" y1="526" x2="492" y2="526"/>
-            <line x1="410" y1="533" x2="492" y2="533"/>
-          </g>
-          <rect x="412" y="489" width="78" height="46" fill="none" stroke="#6a6c72" strokeWidth="1"/>
-          <circle cx="450" cy="508" r="8" fill="#d8dadf" stroke="#333" strokeWidth="2"/>
-          <circle cx="450" cy="508" r="3.5" fill="#44464c"/>
-
-  
-          <rect x="367" y="511" width="37" height="28" rx="4" fill="#161618"/>
-          <circle cx="378" cy="525" r="6.5" fill="#f1f4f7" stroke="#777" strokeWidth="1"/>
-          <circle cx="394" cy="525" r="6.5" fill="#f1f4f7" stroke="#777" strokeWidth="1"/>
-          <rect x="497" y="516" width="46" height="34" rx="4" fill="#161618"/>
-          <circle cx="510" cy="533" r="7.5" fill="#f1f4f7" stroke="#777" strokeWidth="1"/>
-          <circle cx="531" cy="533" r="7.5" fill="#f1f4f7" stroke="#777" strokeWidth="1"/>
-          <rect x="546" y="520" width="16" height="28" rx="3" fill="#f8923c" stroke="#7a3d10" strokeWidth="1.5"/>
-
-  
-          <rect x="427" y="549" width="36" height="26" rx="2" fill="#62d38a" stroke="#2a8a50" strokeWidth="2"/>
-
-  
-  
-            <ellipse cx="632" cy="566" rx="37" ry="52" fill="#151517"/>
-            <ellipse cx="632" cy="566" rx="33" ry="47" fill="none" stroke="#2b2b30" strokeWidth="2"/>
-            <ellipse cx="632" cy="566" rx="28" ry="41" fill="none" stroke="#222226" strokeWidth="1.5"/>
-            <ellipse cx="637" cy="566" rx="27" ry="39" fill="#40424a"/>
-            <ellipse cx="637" cy="566" rx="24" ry="36" fill="url(#brtc-rim)" stroke="#5a5d63" strokeWidth="1.5"/>
-            <ellipse cx="637" cy="566" rx="18.7" ry="28.1" fill="#a9adb5" stroke="#6b6e75" strokeWidth="1"/>
-            <ellipse cx="651.9" cy="566.0" rx="2.4" ry="3.4" fill="#3b3d42"/><ellipse cx="647.5" cy="581.8" rx="2.4" ry="3.4" fill="#3b3d42"/><ellipse cx="637.0" cy="588.3" rx="2.4" ry="3.4" fill="#3b3d42"/><ellipse cx="626.5" cy="581.8" rx="2.4" ry="3.4" fill="#3b3d42"/><ellipse cx="622.1" cy="566.0" rx="2.4" ry="3.4" fill="#3b3d42"/><ellipse cx="626.5" cy="550.2" rx="2.4" ry="3.4" fill="#3b3d42"/><ellipse cx="637.0" cy="543.7" rx="2.4" ry="3.4" fill="#3b3d42"/><ellipse cx="647.5" cy="550.2" rx="2.4" ry="3.4" fill="#3b3d42"/>
-            <ellipse cx="637" cy="566" rx="12.0" ry="18.0" fill="#c9ccd2" stroke="#4d4f55" strokeWidth="1.2"/>
-            <ellipse cx="645.9" cy="571.5" rx="2.2" ry="3.2" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="640.7" cy="579.3" rx="2.2" ry="3.2" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="633.3" cy="579.3" rx="2.2" ry="3.2" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="628.1" cy="571.5" rx="2.2" ry="3.2" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="628.1" cy="560.5" rx="2.2" ry="3.2" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="633.3" cy="552.7" rx="2.2" ry="3.2" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="640.7" cy="552.7" rx="2.2" ry="3.2" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/><ellipse cx="645.9" cy="560.5" rx="2.2" ry="3.2" fill="#d9dce1" stroke="#555" strokeWidth="0.8"/>
-            <ellipse cx="637" cy="566" rx="5.8" ry="8.6" fill="#e7e9ed" stroke="#4d4f55" strokeWidth="1.2"/>
-            <ellipse cx="637" cy="566" rx="2.4" ry="3.6" fill="#6c6f76"/>
-    
-  
-          <path d="M584,552 C588,516 606,503 634,503 C664,503 680,520 684,552" fill="none" stroke="#f77dd0" strokeWidth="3" opacity="0.9"/>
-        </g>
     </svg>
   );
 }
 
 export default function HeroBanner({ filteredCount, busesCount }) {
+  
   return (
     <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#f8f3ea] via-[#f2ece3] to-emerald-50 text-emerald-950 p-6 sm:p-10 md:min-h-[320px] border border-emerald-900/15 mb-8">
       {/* Outline ring accent */}
@@ -266,26 +204,20 @@ export default function HeroBanner({ filteredCount, busesCount }) {
         className="absolute -left-16 -bottom-20 w-80 h-80 rounded-full bg-emerald-500/20 blur-3xl pointer-events-none"
       />
 
-      {/* Decorative BRTC double-decker bus */}
+      {/* Decorative BRTC bus (ground shadow is part of the SVG) */}
       <div
         aria-hidden="true"
-        className="hidden md:block absolute -right-[8%] bottom-4 h-[230px] lg:h-[250px] aspect-[650/470] pointer-events-none select-none"
+        className="hidden md:block absolute right-[5%] bottom-4 h-[230px] lg:h-[250px] aspect-[1680/1030] pointer-events-none select-none"
       >
-        {/* Soft ground shadow */}
-        <div className="absolute left-[4%] right-[0%] bottom-[1%] h-[9%] rounded-[50%] bg-black/35 blur-lg" />
-        {/* Tight contact shadow under the wheels */}
-        <div className="absolute left-[10%] right-[6%] bottom-[3%] h-[5%] rounded-[50%] bg-black/55 blur-[6px]" />
-        <BrtcBusIllustration className="relative w-full h-full" />
+        <BrtcBusIllustration className="w-full h-full" />
       </div>
 
       <div className="relative z-10 max-w-2xl">
-        {/* Category Pill */}
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-800/10 border border-emerald-800/25 text-emerald-900 text-xs font-semibold mb-4">
           <span className="w-2 h-2 rounded-full bg-rose-600 animate-pulse" />
           <span>ঢাকা সিটি ট্রানজিট • Dhaka Bus Directory</span>
         </div>
 
-        {/* Hero Headings */}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-emerald-950 leading-tight">
           Navigate <span className="text-emerald-700">Dhaka</span> with Ease
         </h1>
@@ -294,7 +226,6 @@ export default function HeroBanner({ filteredCount, busesCount }) {
           From Mirpur to Motijheel, Uttara to Sadarghat—find reliable routes, counters, and stoppages across all local, semi-sitting, and AC services.
         </p>
 
-        {/* Key Metrics / Highlights */}
         <div className="flex flex-wrap items-center gap-3 mt-6 text-xs font-medium">
           <div className="flex items-center gap-2 bg-white/80 px-3.5 py-2 rounded-xl border border-emerald-900/15 text-emerald-900 shadow-sm">
             <Bus className="w-4 h-4 text-emerald-700" />
@@ -316,4 +247,4 @@ export default function HeroBanner({ filteredCount, busesCount }) {
       </div>
     </div>
   );
-}
+}             
