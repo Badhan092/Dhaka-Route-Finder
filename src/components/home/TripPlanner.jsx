@@ -1,16 +1,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import {
-  ArrowLeftRight,
-  ArrowRight,
-  CircleDot,
-  Flag,
-  Search,
-  Sparkles,
-  Navigation,
-  MoveRight,
-} from "lucide-react";
+import {ArrowLeftRight,ArrowRight,CircleDot,Flag,Search,Sparkles,Navigation,MoveRight,} from "lucide-react";
 
 const ROUTES_PATH = "/routes";
 
@@ -65,13 +56,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
         <img
           src="/images/dhaka-bus.png"
           alt=""
-          className="
-            h-full w-full
-            object-cover object-center
-            opacity-[0.20]
-            grayscale
-            mix-blend-luminosity
-          "
+          className="h-full w-full object-cover object-center opacity-[0.30] grayscale mix-blend-luminosity"
         />
 
         {/* Blue Gradient Overlay */}

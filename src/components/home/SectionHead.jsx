@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 // eyebrow is optional, e.g. <SectionHead eyebrow="Directory" ... />
 export default function SectionHead({ id, eyebrow, title, subtitle, href, hrefLabel }) {
   return (
-    <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
+    <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 my-8">
       <div>
         {eyebrow && (
           <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-emerald-700 bg-emerald-50 border border-emerald-100 px-2.5 py-1 rounded-full mb-3">

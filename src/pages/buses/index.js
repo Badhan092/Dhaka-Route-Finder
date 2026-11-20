@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 import { nameMatches, stopKey } from "@/lib/locationUtils";
-import BusCard from "@/components/BusCard";
+import BusCard from "@/components/buses/BusCard";
 import EmptyState from "@/components/EmptyState";
 
 import { Search, MapPin, ChevronLeft, ChevronRight } from "lucide-react";

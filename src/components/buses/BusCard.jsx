@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { ArrowRight, MapPin } from 'lucide-react';
 import BusImage from './BusImage';
-import FareBadge from './FareBadge';
-import SaveButton from './SaveButton';
+import FareBadge from '../FareBadge';
+import SaveButton from '../SaveButton';
 
 export default function BusCard({ bus }) {
   const firstStop = bus.stops[0];

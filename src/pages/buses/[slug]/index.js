@@ -5,7 +5,7 @@ import Link from "next/link";
 import RouteMap from "@/components/RouteMap";
 import RouteTimeline from "@/components/RouteTimeline";
 import StopSegment from "@/components/StopSegment";
-import BusImage from "@/components/BusImage";
+import BusImage from "@/components/buses/BusImage";
 import SaveButton from "@/components/SaveButton";
 
 import {
