@@ -141,12 +141,12 @@ export default function StatsStrip({
               key={item.id}
               className={`
                 group relative isolate overflow-hidden
-                rounded-[20px] border p-4
+                rounded-[16px] border p-4
                 shadow-[0_3px_15px_rgba(15,23,42,0.035)]
                 transition-all duration-300 ease-out
                 hover:-translate-y-1
                 hover:shadow-[0_16px_35px_-15px_rgba(15,23,42,0.15)]
-                sm:rounded-[25px] sm:p-6
+                sm:rounded-[16px] sm:p-6
                 ${theme.card}
               `}
             >
@@ -167,8 +167,7 @@ export default function StatsStrip({
                 <div
                   className={`
                     flex h-11 w-11 items-center justify-center
-                    rounded-[15px] shadow-lg
-                    transition-all duration-300
+                    rounded-[8px] transition-all duration-300
                     group-hover:scale-110 group-hover:-rotate-6
                     ${theme.icon}
                   `}
