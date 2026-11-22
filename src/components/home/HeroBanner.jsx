@@ -36,7 +36,7 @@ export default function HeroBanner({ filteredCount, busesCount }) {
       {/* Gradient Overlay */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-r from-[#f8f3ea]/95 via-[#f2ece3]/65 to-emerald-50/35"
+        className="pointer-events-none absolute inset-0 z-[1] bg-gradient-to-r from-[#f8f3ea]/95 via-[#f2ece3]/20 to-emerald-50/35"
       />
 
       {/* Decorative Emerald Glow */}

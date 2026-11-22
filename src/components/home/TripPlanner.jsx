@@ -89,7 +89,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
       {/* Subtle Route Pattern */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute right-0 top-0 z-0 hidden h-full w-[38%] opacity-[0.30] lg:block"
+        className="pointer-events-none absolute right-0 top-0 z-0 hidden h-full w-[38%] opacity-[0.40] lg:block"
       >
         <svg
           viewBox="0 0 420 360"
