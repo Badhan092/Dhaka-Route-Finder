@@ -54,20 +54,14 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
         "
       >
         <img
-          src="/images/dhaka-bus.png"
-          alt=""
-          className="h-full w-full object-cover object-center opacity-[0.30] grayscale mix-blend-luminosity"
+          src="/images/hero-background.jpg"
+          alt="bus on a road in Dhaka"
+          className="h-full w-full object-cover object-left opacity-[0.40] grayscale mix-blend-luminosity"
         />
 
         {/* Blue Gradient Overlay */}
         <div
-          className="
-            absolute inset-0
-            bg-gradient-to-br
-            from-[#183653]/75
-            via-[#245477]/75
-            to-[#4789A5]/70
-          "
+          className="absolute inset-0 bg-gradient-to-br from-[#183653]/75 via-[#245477]/75 to-[#4789A5]/70 "
         />
       </div>
 
@@ -95,11 +89,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
       {/* Subtle Route Pattern */}
       <div
         aria-hidden="true"
-        className="
-          pointer-events-none absolute right-0 top-0 z-0
-          hidden h-full w-[38%] opacity-[0.16]
-          lg:block
-        "
+        className="pointer-events-none absolute right-0 top-0 z-0 hidden h-full w-[38%] opacity-[0.30] lg:block"
       >
         <svg
           viewBox="0 0 420 360"
