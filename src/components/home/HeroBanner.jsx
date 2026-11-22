@@ -1,8 +1,7 @@
 
 import { Bus, MapPin, Compass } from "lucide-react";
 
-const pill =
-  "flex items-center gap-2 bg-white/85 px-3.5 py-2 rounded-xl border border-emerald-900/15 shadow-sm";
+const pill = "flex items-center gap-2 bg-white/85 px-3.5 py-2 rounded-xl border border-emerald-900/15 shadow-sm";
 
 const badges = [
   { Icon: MapPin, color: "text-rose-600", label: "All DMP Corridors" },
