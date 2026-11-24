@@ -1,8 +1,37 @@
-@import './variables.scss';
+@import "./variables.scss";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Fonts */
+
+// Noto Sans Bengali (one family, three weights)
+@font-face {
+  font-family: "NotoSansBengali";
+  src: url("../assets/notosansbengali/notosansbengali_regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NotoSansBengali";
+  src: url("../assets/notosansbengali/notosansbengali_semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NotoSansBengali";
+  src: url("../assets/notosansbengali/notosansbengali_bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Theme variables */
 :root {
   --color-primary: #059669;
   --color-primary-hover: #047857;
@@ -10,33 +39,48 @@
   --color-text-muted: #64748b;
   --color-border: #e2e8f0;
   --color-bg: #f8fafc;
+
+  --font-en: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-bn: "NotoSansBengali", "Noto Sans Bengali", sans-serif;
 }
 
+/* Base */
 body {
   background-color: var(--color-bg);
   color: var(--color-text-main);
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', 'Noto Sans Bengali', sans-serif;
+  font-family: var(--font-en);
   -webkit-font-smoothing: antialiased;
 }
 
+/* Bangla mode: always use Noto Sans Bengali */
+html:lang(bn) body {
+  font-family: var(--font-bn);
+}
+
+/* Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: #f1f5f9;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+
+  &:hover {
+    background: #94a3b8;
+  }
 }
 
+/* Leaflet map */
 .leaflet-container {
   width: 100%;
   height: 100%;
   border-radius: 0.75rem;
   z-index: 10;
+  font-family: inherit; /* popups and labels follow the active font */
 }

@@ -1,52 +1,20 @@
 
-import {
-  BusFront,
-  MapPin,
-  Layers3,
-  Route,
-  Activity,
-  ArrowUpRight,
-} from "lucide-react";
+import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
+import { convertToBanglaNumber } from "@/utils/convertToBanglaNumber";
+import {  BusFront, MapPin,  Layers3,  Route,  Activity,  ArrowUpRight,} from "lucide-react";
 
-export default function StatsStrip({
-  busesCount = 0,
-  stopsCount = 0,
-  typesCount = 0,
-  longestStops = 0,
-}) {
+const StatsStrip = ({busesCount = 0, stopsCount = 0,  typesCount = 0, longestStops = 0,}) => {
+
+  const { t, language } = useLanguage();
+  const isBn = language === "bn";
+  const fmt = (n) => (isBn ? convertToBanglaNumber(n) : n);
+
   const items = [
-    {
-      id: "buses",
-      Icon: BusFront,
-      value: busesCount,
-      label: "Bus routes",
-      description: "Routes across Dhaka",
-      color: "emerald",
-    },
-    {
-      id: "stops",
-      Icon: MapPin,
-      value: stopsCount,
-      label: "Distinct stops",
-      description: "Connected locations",
-      color: "blue",
-    },
-    {
-      id: "types",
-      Icon: Layers3,
-      value: typesCount,
-      label: "Service types",
-      description: "Different bus categories",
-      color: "violet",
-    },
-    {
-      id: "longest",
-      Icon: Route,
-      value: longestStops,
-      label: "Longest route",
-      description: "Stops on a single route",
-      color: "orange",
-    },
+    {id: "buses", Icon: BusFront,value: busesCount,label: "Bus routes",description: "Routes across Dhaka",color: "emerald",},
+    {id: "stops", Icon: MapPin,value: stopsCount,label: "Distinct stops",description: "Connected locations",color: "blue",},
+    {id: "types",Icon: Layers3,value: typesCount,label: "Service types",description: "Different bus categories",color: "violet",},
+    {id: "longest",Icon: Route,value: longestStops,label: "Longest route",description: "Stops on a single route",color: "orange",},
   ];
 
   const themes = {
@@ -93,6 +61,7 @@ export default function StatsStrip({
   };
 
   return (
+
     <section
       aria-label="Dhaka bus network statistics"
       className="mt-14 sm:mt-16"
@@ -107,24 +76,24 @@ export default function StatsStrip({
             </span>
 
             <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-emerald-700">
-              Network intelligence
+              {t("network_intelligence")}
             </span>
           </div>
 
           <h2 className="text-2xl font-black tracking-[-0.045em] text-slate-950 sm:text-3xl">
-            Dhaka at a glance
+            {t("dhaka_at_a_glance")}
             <span className="text-emerald-500">.</span>
           </h2>
 
           <p className="mt-1.5 text-xs text-slate-500 sm:text-sm">
-            Discover the numbers behind Dhaka's connected bus network.
+            {t("discover_numbers")}
           </p>
         </div>
 
         <div className="hidden items-center gap-2 rounded-full border border-emerald-100 bg-white px-3.5 py-2 shadow-sm sm:flex">
           <Activity size={14} className="text-emerald-600" />
           <span className="text-[10px] font-bold text-slate-600">
-            Dataset overview
+            {t("dataset_overview")}
           </span>
           <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
         </div>
@@ -179,9 +148,10 @@ export default function StatsStrip({
                   className={`
                     flex h-8 w-8 items-center justify-center
                     rounded-full transition-all duration-300
-                    ${theme.tag}
+                    ${theme.tag} 
                     group-hover:translate-x-0.5
                     group-hover:-translate-y-0.5
+                    bg-white-[rgb(255 255 255 / 49%)] border border-[#ffffff] backdrop-blur-[2px]
                   `}
                 >
                   <ArrowUpRight size={16} />
@@ -198,27 +168,17 @@ export default function StatsStrip({
                     ${theme.number}
                   `}
                 >
-                  {Number(value || 0).toLocaleString("en-US")}
+                  {fmt(Number(value || 0).toLocaleString("en-US"))}
                 </p>
 
-                <h3
-                  className={`
-                    mt-3 text-[12px] font-extrabold
-                    sm:text-sm ${theme.label}
-                  `}
-                >
-                  {label}
+                <h3 className={` mt-3 text-[12px] font-extrabold sm:text-sm ${theme.label}`}>
+                  {t(label)}
                 </h3>
 
-                <p
-                  className={`
-                    mt-1.5 text-[10px] font-medium
-                    leading-relaxed sm:text-xs
-                    ${theme.description}
-                  `}
-                >
-                  {description}
+                <p className={`mt-1.5 text-[10px] font-medium leading-relaxed sm:text-xs ${theme.description}`}>
+                  {t(description)}
                 </p>
+
               </div>
 
               {/* Bottom accent */}
@@ -247,3 +207,6 @@ export default function StatsStrip({
     </section>
   );
 }
+
+
+export default StatsStrip;

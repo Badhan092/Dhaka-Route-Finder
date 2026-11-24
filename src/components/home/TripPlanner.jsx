@@ -1,13 +1,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
+
+import { useLanguage } from "@/context/LanguageContext";
 import {ArrowLeftRight,ArrowRight,CircleDot,Flag,Search,Sparkles,Navigation,MoveRight,} from "lucide-react";
 
 const ROUTES_PATH = "/routes";
 
-export default function TripPlanner({ stops = [], commutes = [] }) {
+const TripPlanner = ({ stops = [], commutes = [] }) => {
+
   const [from, setFrom] = useState("");
   const [to, setTo] = useState("");
+  const { t, language } = useLanguage();
 
   const ready = from.trim() && to.trim();
 
@@ -148,7 +152,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
                   sm:text-2xl
                 "
               >
-                Plan your trip
+                {t("trip.title")}
                 <span className="text-sky-200">.</span>
               </h2>
 
@@ -158,7 +162,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
                   text-sky-100/80 sm:text-sm
                 "
               >
-                Find the right bus. Discover your route.
+                {t("trip.description")}
               </p>
             </div>
           </div>
@@ -175,7 +179,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
             <span className="h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_0_3px_rgba(110,231,183,0.15)]" />
 
             <span className="text-[10px] font-bold text-white/90">
-              Direct routes
+              {t("trip.directRoutes")}
             </span>
           </div>
         </div>
@@ -226,10 +230,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
           <button
             type="button"
             aria-label="Swap locations"
-            onClick={() => {
-              setFrom(to);
-              setTo(from);
-            }}
+            onClick={() => {setFrom(to);setTo(from); }}
             className="
               group flex h-[46px] w-[46px]
               items-center justify-center
@@ -318,7 +319,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
           >
             <Search size={18} />
 
-            Find buses
+           {t("trip.findBuses")}
 
             <ArrowRight
               size={16}
@@ -344,7 +345,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
                     text-white/75
                   "
                 >
-                  Popular trips
+                  {t("trip.popularTrips")}
                 </span>
               </div>
 
@@ -354,10 +355,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
                     key={c.from + c.to}
                     href={{
                       pathname: ROUTES_PATH,
-                      query: {
-                        from: c.from,
-                        to: c.to,
-                      },
+                      query: {from: t(c.from), to: t(c.to), },
                     }}
                     className="
                       group inline-flex items-center gap-2
@@ -370,7 +368,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
                       hover:bg-white/20 hover:text-white
                     "
                   >
-                    <span>{c.from}</span>
+                    <span>{t(c.from)}</span>
 
                     <MoveRight
                       size={13}
@@ -379,8 +377,7 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
                         group-hover:translate-x-1
                       "
                     />
-
-                    <span>{c.to}</span>
+                    <span>{t(c.to)}</span>
                   </Link>
                 ))}
               </div>
@@ -392,3 +389,6 @@ export default function TripPlanner({ stops = [], commutes = [] }) {
     </section>
   );
 }
+
+
+export default TripPlanner;

@@ -1,40 +1,17 @@
-
-import {
-  ArrowRight,
-  Bookmark,
-  Route,
-  Search,
-  Sparkles,
-} from "lucide-react";
+import React from "react";
+import { useLanguage } from "@/context/LanguageContext";
+import { ArrowRight,Bookmark, Route, Search, Sparkles,} from "lucide-react";
 
 const STEPS = [
-  {
-    Icon: Search,
-    number: "01",
-    title: "Search your route",
-    description:
-      "Enter where you're starting and where you want to go. We'll find matching stops from our Dhaka bus network.",
-    label: "Find your starting point",
-  },
-  {
-    Icon: Route,
-    number: "02",
-    title: "Compare your options",
-    description:
-      "Explore buses serving both stops, check the stops along your journey, and discover convenient alternatives.",
-    label: "Choose the best bus",
-  },
-  {
-    Icon: Bookmark,
-    number: "03",
-    title: "Save & travel",
-    description:
-      "Open the complete bus route, check your journey details, and bookmark the routes you use regularly.",
-    label: "Your journey starts here",
-  },
+  {Icon: Search,number: "01",title: "Search your route",description: "Enter where you're starting and where you want to go. We'll find matching stops from our Dhaka bus network.",label: "Find your starting point",},
+  {Icon: Route,number: "02",title: "Compare your options",description: "Explore buses serving both stops, check the stops along your journey, and discover convenient alternatives.",label: "Choose the best bus",},
+  {Icon: Bookmark,number: "03",title: "Save & travel",description: "Open the complete bus route, check your journey details, and bookmark the routes you use regularly.",label: "Your journey starts here",},
 ];
 
-export default function HowItWorks() {
+const HowItWorks = () => {
+
+  const { t } = useLanguage();
+
   return (
     <section
       aria-labelledby="how"
@@ -54,11 +31,7 @@ export default function HowItWorks() {
       <div
         aria-hidden="true"
         className="absolute inset-0 opacity-[0.13]"
-        style={{
-          backgroundImage:
-            "radial-gradient(#059669 0.8px, transparent 0.8px)",
-          backgroundSize: "20px 20px",
-        }}
+        style={{ backgroundImage: "radial-gradient(#059669 0.8px, transparent 0.8px)", backgroundSize: "20px 20px",}}
       />
 
       <div className="relative z-10">
@@ -67,28 +40,27 @@ export default function HowItWorks() {
           <div>
             <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/70 px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.18em] text-emerald-700 shadow-sm">
               <Sparkles className="h-3.5 w-3.5" />
-              Simple & convenient
+              {t("simple_convenient")}
             </div>
 
             <h2
               id="how"
               className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl"
             >
-              Your journey,{" "}
+              {t("your_journey")},{" "}
               <span className="text-emerald-600">
-                simplified.
+                {t("simplified")}
               </span>
             </h2>
 
             <p className="mt-2 max-w-lg text-sm leading-relaxed text-slate-600">
-              Finding the right bus in Dhaka doesn't have to be complicated.
-              Just follow three simple steps.
+              {t("finding_right_bus")}
             </p>
           </div>
 
           <div className="hidden items-center gap-2 rounded-full border border-emerald-200 bg-white/70 px-4 py-2 text-xs font-semibold text-emerald-800 shadow-sm sm:inline-flex">
             <span className="h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_#34D399]" />
-            Three easy steps
+            {t("three_easy_steps")}
           </div>
         </div>
 
@@ -118,17 +90,17 @@ export default function HowItWorks() {
 
               {/* Step title */}
               <h3 className="mt-6 text-lg font-bold tracking-tight text-slate-900">
-                {title}
+                {t(title)}
               </h3>
 
               <p className="mt-2 min-h-[66px] text-sm leading-relaxed text-slate-500">
-                {description}
+                {t(description)}
               </p>
 
               {/* Bottom label */}
               <div className="mt-5 flex items-center justify-between border-t border-emerald-100 pt-4">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700">
-                  {label}
+                  {t(label)}
                 </span>
 
                 <span className="flex h-7 w-7 items-center justify-center rounded-full border border-emerald-100 bg-emerald-50 text-emerald-600 transition-all duration-300 group-hover:translate-x-1 group-hover:bg-emerald-500 group-hover:text-white">
@@ -143,13 +115,13 @@ export default function HowItWorks() {
         <div className="mt-7 flex flex-wrap items-center justify-between gap-3 border-t border-emerald-200/70 pt-5">
           <p className="text-xs text-slate-600">
             <span className="font-bold text-emerald-700">
-              Less confusion.
+              {t("less_confusion")}
             </span>{" "}
-            More confident journeys.
+            {t("more_confident_journeys")}
           </p>
 
           <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-800">
-            Made for Dhaka commuters
+            {t("made_for_dhaka_commuters")}
             <span className="text-base">🚌</span>
           </div>
         </div>
@@ -157,3 +129,5 @@ export default function HowItWorks() {
     </section>
   );
 }
+
+export default HowItWorks;

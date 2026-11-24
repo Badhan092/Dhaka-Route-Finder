@@ -1,8 +1,14 @@
 import Link from "next/link";
-import { ArrowUpRight, Armchair, Bus, Repeat, Route, Snowflake } from "lucide-react";
-import SectionHead from "./SectionHead";
 
-const ICONS = { "Semi-Sitting": Armchair, Regular: Bus, "AC services": Snowflake, "Local service": Route, Circular: Repeat };
+import SectionHead from "./SectionHead";
+import { ArrowUpRight, Armchair, Bus, Repeat, Route, Snowflake } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
+import { convertToBanglaNumber } from "@/utils/convertToBanglaNumber";
+
+
+
+const ICONS = { "Semi-Sitting": Armchair, Regular: Bus, "AC services": Snowflake, "Local service": Route, Circular: Repeat,};
+
 // Full class strings so Tailwind can see them.
 const THEMES = [
   { chip: "bg-emerald-100 text-emerald-700", bar: "bg-emerald-500", hover: "hover:border-emerald-400" },
@@ -12,32 +18,60 @@ const THEMES = [
   { chip: "bg-rose-100 text-rose-700", bar: "bg-rose-500", hover: "hover:border-rose-400" },
 ];
 
-// types: [{ label, filter, n }] counted from each bus's service-type text. A bus can match several.
-export default function ServiceTypes({ types }) {
-  const max = Math.max(...types.map((t) => t.n), 1);
+
+const ServiceTypes = ({ types }) => {
+  
+  const { t, language } = useLanguage();
+  const isBn = language === "bn";
+  const fmt = (n) => (isBn ? convertToBanglaNumber(n) : n);
+  const max = Math.max(...types.map((type) => type.n), 1);
+
   return (
     <section aria-labelledby="types" className="mt-16">
-      <SectionHead id="types" eyebrow="Explore" title="Browse by service type" subtitle="Bars compare each type with the largest one. A bus can list more than one type, so counts overlap." />
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
-        {types.map((t, i) => {
+      <SectionHead
+        id="types"
+        eyebrow={t("Explore")}
+        title={t("Browse by service type")}
+        subtitle={t(
+          "Bars compare each type with the largest one. A bus can list more than one type, so counts overlap."
+        )}
+      />
+
+      <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-5">
+        {types.map((type, i) => {
           const theme = THEMES[i % THEMES.length];
-          const Icon = ICONS[t.label] || Bus;
+          const Icon = ICONS[type.label] || Bus;
+
           return (
             <Link
-              key={t.label}
-              href={{ pathname: "/buses", query: { type: t.filter } }}
-              className={`group relative flex flex-col bg-white p-4 sm:p-5 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-xl hover:shadow-slate-900/5 hover:-translate-y-0.5 transition-all duration-200 ${theme.hover}`}
+              key={type.label}
+              href={{ pathname: "/buses", query: { type: type.filter } }}
+              className={`group relative flex flex-col rounded-3xl border border-slate-200/80 bg-white p-4 shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-slate-900/5 sm:p-5 ${theme.hover}`}
             >
               <div className="flex items-start justify-between">
-                <span className={`inline-flex items-center justify-center w-10 h-10 rounded-2xl ${theme.chip}`}>
-                  <Icon className="w-5 h-5" aria-hidden="true" />
+                <span className={`inline-flex h-10 w-10 items-center justify-center rounded-2xl ${theme.chip}`}>
+                  <Icon className="h-5 w-5" aria-hidden="true" />
                 </span>
-                <ArrowUpRight className="w-4 h-4 text-slate-300 group-hover:text-slate-700 transition-colors" aria-hidden="true" />
+                <ArrowUpRight
+                  className="h-4 w-4 text-slate-300 transition-colors group-hover:text-slate-700"
+                  aria-hidden="true"
+                />
               </div>
-              <p className="mt-4 font-bold text-slate-900">{t.label}</p>
-              <p className="text-sm text-slate-500"><span className="text-xl font-extrabold text-slate-900">{t.n}</span> {t.n === 1 ? "bus" : "buses"}</p>
-              <div className="mt-3 h-1.5 w-full rounded-full bg-slate-100 overflow-hidden" aria-hidden="true">
-                <div className={`h-full rounded-full ${theme.bar}`} style={{ width: `${Math.max(8, Math.round((t.n / max) * 100))}%` }} />
+
+              <p className="mt-4 font-bold text-slate-900">{t(type.label)}</p>
+
+              <p className="text-sm text-slate-500">
+                <span className="text-xl font-extrabold text-slate-900">
+                  {fmt(type.n)}
+                </span>{" "}
+                {type.n === 1 ? t("bus") : t("buses")}
+              </p>
+
+              <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-slate-100" aria-hidden="true">
+                <div
+                  className={`h-full rounded-full ${theme.bar}`}
+                  style={{ width: `${Math.max(8, Math.round((type.n / max) * 100))}%` }}
+                />
               </div>
             </Link>
           );
@@ -45,4 +79,6 @@ export default function ServiceTypes({ types }) {
       </div>
     </section>
   );
-}
+};
+
+export default ServiceTypes;

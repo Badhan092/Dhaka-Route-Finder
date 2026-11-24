@@ -8,7 +8,7 @@ import StatsStrip from "@/components/home/StatsStrip";
 import TripPlanner from "@/components/home/TripPlanner";
 import HowItWorks from "@/components/home/HowItWorks";
 import ServiceTypes from "@/components/home/ServiceTypes";
-import HubStops from "@/components/home/HubStops";
+import HubStops from "@/components/hubs/HubStops";
 import Faq from "@/components/home/Faq";
 import CtaBand from "@/components/home/CtaBand";
 import SectionHead from "@/components/home/SectionHead";
