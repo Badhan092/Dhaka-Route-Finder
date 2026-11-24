@@ -84,6 +84,12 @@ const translations = {
     "hubs.more": "+{n} more",
 
 
+    // BusSearchForm translations
+    "All buses": "All buses",
+    "buses.browseAll": "Browse all {n} buses, A–Z.",
+    "search.busPlaceholder": "e.g. Alif, Bikash, Achim...",
+    "search.stopPlaceholder": "e.g. Farmgate, Mirpur 10...",
+
   },
   bn: {
 
@@ -175,9 +181,23 @@ const translations = {
     "buses": "বাস",
     "hubs.ariaLabel": "{name} এ চলাচলকারী {n}টি বাস দেখুন",
     "hubs.more": "আরও {n}টি",
+
+
+    // BusSearchForm translations
+    "All buses": "সব বাস",
+    "buses.browseAll": "সব {n}টি বাস দেখুন, বর্ণানুক্রমে।",
+    "Search Bus Name": "বাসের নাম খুঁজুন",
+    "Serves Area / Stop": "এলাকা / স্টপেজ",
+    "Service Type": "সার্ভিসের ধরন",
+    "All service types": "সব ধরনের সার্ভিস",
+    "search.busPlaceholder": "যেমন: আলিফ, বিকাশ, আছিম...",
+    "search.stopPlaceholder": "যেমন: ফার্মগেট, মিরপুর ১০...",
+    "Filter": "ফিল্টার",
+    "Clear": "মুছে ফেলুন",
+
+
     
     // Bus stop translations
-
     "Azimpur": "আজিমপুর",
     "Airport": "এয়ারপোর্ট",
 

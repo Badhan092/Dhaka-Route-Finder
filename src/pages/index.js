@@ -11,7 +11,7 @@ import ServiceTypes from "@/components/home/ServiceTypes";
 import HubStops from "@/components/hubs/HubStops";
 import Faq from "@/components/home/Faq";
 import CtaBand from "@/components/home/CtaBand";
-import SectionHead from "@/components/home/SectionHead";
+
 
 import BusSearchForm from "@/components/buses/BusSearchForm";
 import BusGrid from "@/components/buses/BusGrid";
@@ -83,7 +83,7 @@ export default function BusDirectoryPage({
       <HowItWorks />
       <ServiceTypes types={home.types} />
       <HubStops hubs={home.hubs} />
-      <SectionHead id="all" title="All buses" subtitle={`Browse all ${busesCount} buses, A–Z.`} />
+
       <BusSearchForm filters={filters} stops={stops} isHome={isHome} />
       <BusGrid buses={pagedBuses} />
       <Pagination currentPage={currentPage} totalPages={totalPages} filters={filters} />
