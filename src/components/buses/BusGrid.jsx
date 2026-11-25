@@ -1,7 +1,13 @@
 import BusCard from "@/components/buses/BusCard";
 import EmptyState from "@/components/EmptyState";
+import Pagination from "@/components/buses/Pagination";
 
-export default function BusGrid({ buses }) {
+export default function BusGrid({
+  buses = [],
+  currentPage,
+  totalPages,
+  filters,
+}) {
   if (!buses.length) {
     return (
       <EmptyState
@@ -12,10 +18,18 @@ export default function BusGrid({ buses }) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-      {buses.map((bus) => (
-        <BusCard key={bus.slug} bus={bus} />
-      ))}
-    </div>
+    <>
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {buses.map((bus) => (
+          <BusCard key={bus.slug} bus={bus} />
+        ))}
+      </div>
+
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        filters={filters}
+      />
+    </>
   );
 }

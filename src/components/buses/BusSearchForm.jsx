@@ -5,7 +5,7 @@ import { TYPE_OPTIONS } from "@/lib/busDirectory";
 import { useLanguage } from "@/context/LanguageContext";
 import { convertToBanglaNumber } from "@/utils/convertToBanglaNumber";
 
-import SectionHead from "@/components/home/SectionHead";
+import SectionHead from "@/components/Layouts/SectionHead";
 import Field from "@/components/Layouts/Field";
 
 

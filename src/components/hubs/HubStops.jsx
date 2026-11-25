@@ -2,7 +2,7 @@ import React from "react";
 
 import { useLanguage } from "@/context/LanguageContext";
 
-import SectionHead from "../home/SectionHead";
+import SectionHead from "../Layouts/SectionHead";
 import HubCard from "@/components/hubs/HubCard";
 
 

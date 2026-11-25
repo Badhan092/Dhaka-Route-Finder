@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useLanguage } from "@/context/LanguageContext";
+import {convertToBanglaNumber} from "@/utils/convertToBanglaNumber";
+
 
 const BASE = "flex items-center gap-1 rounded-xl border border-slate-200 px-4 py-2";
 
@@ -23,10 +26,15 @@ function PageLink({ href, rel, children }) {
   );
 }
 
-export default function Pagination({ currentPage, totalPages, filters }) {
+const Pagination = ({ currentPage, totalPages, filters }) => {
+
   if (totalPages <= 1) return null;
 
+  const {t, language} = useLanguage();
+  const isBn = language === "bn";
+  const fmt = (n) => (isBn ? convertToBanglaNumber(n) : n);
   const activeFilters = Object.fromEntries(Object.entries(filters).filter(([, v]) => v));
+  
   const hrefFor = (page) => ({ pathname: "/buses", query: { ...activeFilters, page } });
 
   return (
@@ -35,16 +43,18 @@ export default function Pagination({ currentPage, totalPages, filters }) {
       className="mt-12 flex items-center justify-center gap-3 border-t border-slate-200 pt-6 text-sm"
     >
       <PageLink href={currentPage > 1 ? hrefFor(currentPage - 1) : null} rel="prev">
-        <ChevronLeft className="h-4 w-4" /> Previous
+        <ChevronLeft className="h-4 w-4" /> {t("Previous")}
       </PageLink>
 
       <span aria-current="page" className="px-2 font-medium text-slate-600">
-        Page {currentPage} of {totalPages}
+        {t("Page {currentPage} of {totalPages}", { currentPage: fmt(currentPage), totalPages: fmt(totalPages) })}
       </span>
 
       <PageLink href={currentPage < totalPages ? hrefFor(currentPage + 1) : null} rel="next">
-        Next <ChevronRight className="h-4 w-4" />
+        {t("Next")} <ChevronRight className="h-4 w-4" />
       </PageLink>
     </nav>
   );
 }
+
+export default Pagination;

@@ -74,7 +74,7 @@ function ResultBody({ result, params }) {
   }
 }
 
-export default function RoutesPage({ params, stopNames, result }) {
+const RoutesPage = ({ params, stopNames, result }) => {
   return (
     <>
       <Head>
@@ -95,4 +95,6 @@ export default function RoutesPage({ params, stopNames, result }) {
       </div>
     </>
   );
-}
+};
+
+export default RoutesPage;

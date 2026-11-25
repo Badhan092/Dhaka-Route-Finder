@@ -1,14 +1,19 @@
 'use client';
-
+import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, ChevronRight, Clock, ShieldCheck } from 'lucide-react';
-import FareBadge from './FareBadge';
-import RouteTimeline from './RouteTimeline';
-import SaveButton from './SaveButton';
+import { useLanguage } from '@/context/LanguageContext';
 import { calculateEstimatedFare } from '@/lib/routeMatching';
 
-export default function RouteResultCard({ bus, seg, from, to }) {
+import FareBadge from '@/components/FareBadge';
+import RouteTimeline from '@/components/routes/RouteTimeline';
+import SaveButton from '@/components/SaveButton';
+
+
+const RouteResultCard = ({ bus, seg, from, to }) => {
+
   const fare = calculateEstimatedFare(bus, seg.count);
+  const {t, language} = useLanguage();
   const q = new URLSearchParams({ from, to });
 
   return (
@@ -18,11 +23,11 @@ export default function RouteResultCard({ bus, seg, from, to }) {
           <div className="flex items-center gap-2 flex-wrap">
             <h3 className="font-bold text-slate-900 text-lg">
               <Link href={`/buses/${bus.slug}`} className="hover:text-emerald-600 transition-colors">
-                {bus.name}
+                {t(bus.name)}
               </Link>
             </h3>
             {bus.bn && (
-              <span className="text-xs text-slate-500 font-normal">({bus.bn})</span>
+              <span className="text-xs text-slate-500 font-normal">({t(bus.bn)})</span>
             )}
             <span className="px-2 py-0.5 bg-emerald-50 text-emerald-700 border border-emerald-100 text-xs font-semibold rounded-full">
               Direct Service
@@ -80,3 +85,6 @@ export default function RouteResultCard({ bus, seg, from, to }) {
     </article>
   );
 }
+
+
+export default RouteResultCard;

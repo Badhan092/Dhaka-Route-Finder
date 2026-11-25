@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import SectionHead from "./SectionHead";
+import SectionHead from "../Layouts/SectionHead";
 import { ArrowUpRight, Armchair, Bus, Repeat, Route, Snowflake } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { convertToBanglaNumber } from "@/utils/convertToBanglaNumber";

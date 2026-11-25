@@ -47,7 +47,7 @@ const HowItWorks = () => {
               id="how"
               className="text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl lg:text-4xl"
             >
-              {t("your_journey")},{" "}
+              {t("Your journey")},{" "}
               <span className="text-emerald-600">
                 {t("simplified")}
               </span>

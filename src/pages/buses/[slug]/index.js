@@ -2,8 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 
 // NOTE: no top-level import from "@/lib/busData" (it uses fs, server only).
-import RouteMap from "@/components/RouteMap";
-import RouteTimeline from "@/components/RouteTimeline";
+import RouteMap from "@/components/routes/RouteMap";
+import RouteTimeline from "@/components/routes/RouteTimeline";
 import StopSegment from "@/components/StopSegment";
 import BusImage from "@/components/buses/BusImage";
 import SaveButton from "@/components/SaveButton";

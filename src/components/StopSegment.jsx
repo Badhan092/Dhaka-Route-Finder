@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import RouteTimeline from './RouteTimeline';
+import RouteTimeline from './routes/RouteTimeline';
 
 export default function StopSegment({ stops = [] }) {
   const [fromIdx, setFromIdx] = useState(0);

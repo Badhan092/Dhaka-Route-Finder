@@ -12,13 +12,10 @@ import HubStops from "@/components/hubs/HubStops";
 import Faq from "@/components/home/Faq";
 import CtaBand from "@/components/home/CtaBand";
 
-
 import BusSearchForm from "@/components/buses/BusSearchForm";
 import BusGrid from "@/components/buses/BusGrid";
-import Pagination from "@/components/buses/Pagination";
 
 export async function getServerSideProps({ query }) {
-  // busData is server-only, so it is loaded dynamically (see its header comment).
   const [{ getBuses }, { getStops }, { findDirect }] = await Promise.all([
     import("@/lib/busData"),
     import("@/lib/busUtils"),
@@ -46,23 +43,22 @@ export async function getServerSideProps({ query }) {
       pagedBuses: pagedItems,
       currentPage,
       totalPages,
-      // Skipped (and not serialized) when it isn't displayed.
       home: isHome ? getHomeData(buses, stops, findDirect) : null,
     },
   };
 }
 
-export default function BusDirectoryPage({
-  filters,
-  stops,
-  isHome,
-  busesCount,
-  filteredCount,
-  pagedBuses,
-  currentPage,
-  totalPages,
-  home,
-}) {
+const BusDirectoryPage = ({
+  filters,  
+  stops, 
+  isHome, 
+  busesCount, 
+  filteredCount,  
+  pagedBuses,  
+  currentPage,  
+  totalPages, 
+  home,}) => {
+    
   return (
     <>
       <Head>
@@ -72,6 +68,7 @@ export default function BusDirectoryPage({
           content="Find Dhaka bus routes, browse all local, semi-sitting and AC services, and see the stops on each route."
         />
       </Head>
+
       <HeroBanner filteredCount={filteredCount} busesCount={busesCount} />
       <StatsStrip
         busesCount={busesCount}
@@ -85,10 +82,17 @@ export default function BusDirectoryPage({
       <HubStops hubs={home.hubs} />
 
       <BusSearchForm filters={filters} stops={stops} isHome={isHome} />
-      <BusGrid buses={pagedBuses} />
-      <Pagination currentPage={currentPage} totalPages={totalPages} filters={filters} />
+      <BusGrid
+        buses={pagedBuses}
+        currentPage={currentPage}
+        totalPages={totalPages}
+        filters={filters}
+      />
+
       <Faq />
       <CtaBand />
     </>
   );
-}
+};
+
+export default BusDirectoryPage;

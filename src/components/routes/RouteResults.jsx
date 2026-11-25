@@ -1,5 +1,5 @@
 import EmptyState from "@/components/EmptyState";
-import RouteResultCard from "@/components/RouteResultCard";
+import RouteResultCard from "@/components/routes/RouteResultCard";
 import FilterBar from "./FilterBar";
 import TransferSection from "./TransferSection";
 
