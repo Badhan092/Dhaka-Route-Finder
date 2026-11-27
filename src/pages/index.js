@@ -6,6 +6,7 @@ import { filterBuses, paginate, getHomeData } from "@/lib/busUtils"; // pure, cl
 import HeroBanner from "@/components/home/HeroBanner";
 import StatsStrip from "@/components/home/StatsStrip";
 import TripPlanner from "@/components/home/TripPlanner";
+import StickyStackedCards from "@/components/home/StickyStackedCards";
 import HowItWorks from "@/components/home/HowItWorks";
 import ServiceTypes from "@/components/home/ServiceTypes";
 import HubStops from "@/components/hubs/HubStops";
@@ -77,6 +78,7 @@ const BusDirectoryPage = ({
         longestStops={home.longestStops}
       />
       <TripPlanner stops={stops} commutes={home.commutes} />
+      <StickyStackedCards /> 
       <HowItWorks />
       <ServiceTypes types={home.types} />
       <HubStops hubs={home.hubs} />
